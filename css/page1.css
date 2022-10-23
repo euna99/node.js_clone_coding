@@ -1,0 +1,430 @@
+.div_whole{
+    padding-top: 25px;
+}
+
+.img_wrap{
+    height:304px;
+    width:100vw;
+    position: relative;
+    margin:0 auto;
+    overflow: hidden;
+}
+/* section이름 ul이름 li이름 */
+.imgbar{
+    height:300px;
+    width:1060px;
+    display:flex;
+    margin:0 auto;
+    position: absolute;
+    left:-56%;
+}  
+.imgbar li{
+    margin: 0px 10px;
+}
+
+
+/* .imgbar li.currentroll{
+    left: -540px;
+    transition: left .5s ease-in-out, right .5s ease-in-out;
+}
+.imgbar li.prevroll{
+    left: -1060px;
+    transition: left .5s ease-in-out, right .5s ease-in-out;
+}
+.imgbar.reverse li.prevroll{
+    transition: none;
+}
+.imgbar li.nextroll{
+    left: 1060px;
+    display: block;
+    transition: none;
+}
+.imgbar.reverse li.nextroll{
+    transition: left .5s ease-in-out, right .5s ease-in-out;
+} */
+
+
+/* section 시작 */
+
+.sec_first{ 
+    border-bottom:1px solid #444444;
+    width: 100vw;
+    height: 1064px;
+    padding: 60px 0;
+}
+
+
+.title_first{
+    width: 1060px;
+    height: 30.2px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.title_first h2{
+    height: 30px;
+    width:fit-content;
+    text-align: center;
+    font-weight: 700;
+    white-space: nowrap;
+    font-size:22px;
+    margin:0 auto;
+}
+
+.title_first button{
+    width:18px;
+    height: 19px;
+    border-radius: 50px;
+    border: 0.3px solid black;
+}
+
+.bar{
+    width:1060px;
+    height: 40px;
+    padding:0 0 0.5px;
+    text-align: center;
+    margin: 30px auto;
+    flex-direction: row;
+    align-items: center;
+    /* overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: ; */
+}
+
+.bar button{
+    margin:0px 4px;
+    padding: 9px 22px;
+    border: 1px solid #e1e2e3;
+    background-color: white;
+}
+.btnb{
+    font-size: 15px;
+    /* min-width: 100px;
+    width:auto; */
+    border-radius: 50px;
+    margin:auto;
+    height: 40px;
+    /* font-size: inherit;
+    font-weight: inherit;
+    display: inherit; */
+}
+
+#btna{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e1e2e3;
+    border-radius : 50%
+}
+#btnd{
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e1e2e3;
+}
+
+.wrapper_first {
+    width:1060px;
+    height:740px;
+    margin: auto;
+}
+
+.site{
+    width: 1080px;
+    display: flex;
+    flex-wrap: wrap; 
+    /* list-style: none; */
+}
+
+.site li{
+    width:250px;
+    height: 308px;
+    margin:0px 10px;
+} 
+
+.tit_p{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    margin: 17px 0 8px;
+}
+
+
+.infor_p{
+    height: 42px;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 21px;
+    color: #aaa;
+}
+
+.site img {
+    width: 250px;
+    height: 175px;
+    object-fit: cover;
+}
+
+.more{
+    width:1060px;
+    height: 50px;
+    text-align: center;
+}
+
+.more_btn{
+    width:345px;
+    height: 50px;
+    padding: 0 27px;
+    font-size:16px;
+    font-weight: 700;
+    display: inline-block;
+    background-color: inherit;
+    border:1px solid #e1e2e3;
+    border-radius: 50px;
+}
+
+
+/* sec_first 끝 */
+
+/* .sec_second{
+    width:100vw;
+    height: 400px;
+    padding: 60px 0px;
+    border-bottom:1px solid #444444;
+} */
+
+
+.title_second{
+    width: 1060px;
+    height: 50px;
+    margin:0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.title_second h2{
+    height: 50px; 
+    font-weight: 700;
+    font-size:22px;
+    margin:0 auto;
+}
+
+.title_second a{
+    width:108px;
+    height: 18px;
+    margin: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: normal;
+    vertical-align: middle;
+    margin:0 auto;
+    color: #767676;
+
+}
+
+
+.wrapper_second{
+    width:1080px;
+    height: 290.14px;
+    margin:0 auto;
+}
+
+.article{
+    width: 1080px;
+    display: flex;
+    /* list-style: none; */
+}
+
+.article li{
+    width:270px;
+    height:290px;
+    padding: 10px;
+} 
+
+.article_img img{
+    width: 250px;
+    height: 175px;
+}
+
+.article_div{
+    width: 250px;
+    height: 78px;
+}
+
+.article_tit{
+    width: 250px;
+    height: 48px;
+    margin:17px 0px 0px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5rem;
+
+}
+.article_p{
+    width: 250px;
+    height: 17.14px;
+    margin:13px 0px 0px;
+}
+
+/* sec_2번 3번 한번에 끝 */
+.cont{
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    vertical-align: midlle;
+    background-image: linear-gradient(102deg,#2f5fef -127%,#046afe 50%,#00d2dd 145%);
+    width:1060px;
+    height: 64px;
+    margin:0 auto;
+    border-radius: 50px;
+} 
+
+.cont_span{
+    width:377px;
+    height: 224px;
+    margin:0px auto;
+    color:white;
+    font-size: 17px;
+    font-weight: 700px;
+    padding:21px 30px;
+}
+
+
+
+.wrapper_four{
+    width:1060px;
+    margin:0 auto;
+    display:flex;
+}
+
+.event{
+    width: 1080px;
+    display: flex;
+}
+.event li{
+    width:538px;
+    height: 356px;
+    padding:10px;
+    display:flex;
+
+}
+
+.event_img{
+    width:522px;
+    height: 273px;;
+
+}
+
+.event_div{
+    width:522px;
+    height: 22px;
+    margin: 12px 0 0;
+}
+
+/* 구독해야하는 이유 */
+.reason_sec{
+    background-color:#f7f7f7;
+    height: 158px;
+    padding: 60px 0;
+}
+
+.reason{
+    background-color:inherit;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width:1060px;
+}
+
+.reason_gr1{
+    width:515px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding:50px auto;
+    margin: 0 20%;
+}
+
+.reason_gr1 img{
+    width: 150px;
+    height:30px;
+    object-fit: fill;
+}
+
+.reason_gr1 p{
+    font-size: 9px;
+}
+.reason_gr1 span{
+    font-size: 30px;
+    width:fit-content
+}
+
+#reason_btn{
+    border-radius: 50px;
+    width:260px;
+    height: 50px;
+    border:none;
+    margin-top: 25px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #36f;
+}
+
+
+.reason_2{
+    margin:auto;
+}
+
+.reason_2 img{
+    width: 500px;
+    height: 150px;
+    margin:auto;
+}
+
+.hire{
+    padding:60px 0px 80px 0px;
+}
+
+.hire_1{
+    font-size: 22px;
+    line-height: 1.33;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 30px;
+    text-align: center;
+}
+.hire_container{
+    margin:0 auto;
+    width:1060px;
+    height:120px;
+    display:flex;
+}
+
+
+.hire_2{
+    border: 0.7px solid #e1e2e3;
+    width:250px;
+    height: 100px;
+    text-align: center;
+    padding-top: 18px;
+    
+}
+
+.hire_3{
+    width:250px;
+    height: 32px;
+    text-align: center;    
+}
+
+.SvgIcon{
+    width:32px;
+    height: 32px;
+}
+
+.hire_4{
+    width:250px;
+    text-align: center;
+    font-size: 16px;   
+    padding-top: 20px;
+}
+
