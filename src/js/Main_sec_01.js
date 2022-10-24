@@ -1,5 +1,5 @@
 import '../css/main.css';
-function Main(){
+function Main_Sec_01(){
 
     return(
 
@@ -139,7 +139,7 @@ function Main(){
                 </div>     
             </div>
         </section>
-</div>
+        </div>
     );}   
 
-export default Main
+export default Main_Sec_01
