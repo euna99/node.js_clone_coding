@@ -25,6 +25,11 @@
     height:20.8px;
 }
 
+.Wanted_logo_left{
+    width:74px;
+    height:19.8px;
+    object-fit: fill;
+}
 #hamberger{
     width:17px;
     height: 20.8px;
@@ -34,21 +39,57 @@
     margin:0px 15px 0px 0px;
 }
 /* margin: (위 오른쪽 아래 왼쪽 ) */
+.hamberger_img{
+    width:17px;
+    height:20px;
+    object-fit:contain;
+}
+
+#hamber_hover{
+    display:none;
+    /* overflow-y: scroll; */
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    /* margin-top: 30px; */
+}
+
+#hamber_hover ul{
+    /* display: block; */
+    padding: 5px 100px 5px 10px;
+    font-size: 13px;
+    line-height: 2.86;
+    list-style: none;
+    overflow-y: scroll;
+}
+
+.left_hover:hover #hamber_hover
+{
+    display:block;
+} 
 
 
 .center{
-    width: 540px;
-    height: 50px;
+    height: inherit;
     text-align: center;
+    margin: 0;
     vertical-align: middle;
     display: inline-block;
 } 
 
 .center li{
     height: inherit;
-    float:left
+    float:left;
 }
 
+.center a{
+    padding:15px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    display:flex;
+
+}
 
 
 .right{
