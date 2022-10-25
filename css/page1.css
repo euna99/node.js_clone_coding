@@ -6,6 +6,7 @@
     height:304px;
     width:100vw;
     position: relative;
+    margin:0 auto;
     overflow: hidden;
 }
 /* section이름 ul이름 li이름 */
@@ -13,8 +14,7 @@
     height:300px;
     width:1060px;
     display:flex;
-    /* overflow: hidden; */
-    /* margin:0 auto; */
+    margin:0 auto;
     position: absolute;
     left:-56%;
 }  
@@ -22,14 +22,36 @@
     margin: 0px 10px;
 }
 
+
+/* .imgbar li.currentroll{
+    left: -540px;
+    transition: left .5s ease-in-out, right .5s ease-in-out;
+}
+.imgbar li.prevroll{
+    left: -1060px;
+    transition: left .5s ease-in-out, right .5s ease-in-out;
+}
+.imgbar.reverse li.prevroll{
+    transition: none;
+}
+.imgbar li.nextroll{
+    left: 1060px;
+    display: block;
+    transition: none;
+}
+.imgbar.reverse li.nextroll{
+    transition: left .5s ease-in-out, right .5s ease-in-out;
+} */
+
+
 /* section 시작 */
-/* 
+
 .sec_first{ 
     border-bottom:1px solid #444444;
     width: 100vw;
     height: 1064px;
     padding: 60px 0;
-} */
+}
 
 
 .title_first{
@@ -280,11 +302,12 @@
     width: 1080px;
     display: flex;
 }
-.event_li{
+.event li{
     width:538px;
     height: 356px;
     padding:10px;
-    /* display:flex; */
+    display:flex;
+
 }
 
 .event_img{
@@ -297,8 +320,6 @@
     width:522px;
     height: 22px;
     margin: 12px 0 0;
-    display:flex;
-    text-align: center;
 }
 
 /* 구독해야하는 이유 */
