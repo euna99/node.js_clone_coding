@@ -3,8 +3,8 @@ import "./Sign.css"
 function Sign(){
 
     return(
-        <div>
-<div className="sign_background">
+    <div>
+    <div className="sign_background">
         <div className = "login_wrapper">
             <div className="sign_header">
                 <img src="../img/480a35976bf401a88dd7388d8f5c19d77227cd35.png" alt=""></img>

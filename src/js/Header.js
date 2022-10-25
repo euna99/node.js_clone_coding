@@ -1,16 +1,14 @@
 import '../css/reset.css';
 import '../css/Header.css';
-import { BiSearch } from "react-icons/bi";
-
+// import './sign_Modal'
+import { BiSearch } from 'react-icons/bi';
 function Header(){
-
-   return(
-
+return(
     <div className="header">
     <div className="navbar">
         <div className="left">  
         <div className="left_hover">
-             <button id="hamberger">
+            <button id="hamberger">
                 <img className="hamberger_img" alt="hover_menu" src="img/hamberger.webp" />
             </button>
             <div id="hamber_hover">
@@ -54,9 +52,10 @@ function Header(){
 
         <div className="right">
             <button id="serch">
-                 <BiSearch/>
+                <BiSearch/>
             </button>
-            <button id="sign">회원가입/로그인</button> 
+            <button
+            id="sign">회원가입/로그인</button> 
             <button id="service">기업서비스</button>
         </div>
     </div> 
