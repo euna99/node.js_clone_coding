@@ -4,9 +4,9 @@ import '../css/Header.css';
 import { BiSearch } from 'react-icons/bi';
 import SignModal from './sign_Modal';
 import {useState} from 'react';
+// import {Link} from 'react-router-dom';
 
 function Header(){
-    
         // 모달창 노출 여부 state
         const [modalOpen, setModalOpen] = useState(false);
     
@@ -29,7 +29,10 @@ return(
             <div id="hamber_hover">
                 <ul>
                     <li className="imgbar_li">직군전체</li>
-                    <li className="imgbar_li">개발</li>
+                    {/* <Link to="/develop">
+                    <li className="imgbar_li" >개발</li>
+                    </Link> */}
+
                     <li className="imgbar_li">경영</li>
                     <li className="imgbar_li">마케팅</li>
                     <li className="imgbar_li">디자인</li>
@@ -77,6 +80,6 @@ return(
     </div> 
 </div>
     );
- }
+}
 
- export default Header;
+export default Header;
