@@ -50,9 +50,9 @@ function Main_sec_03(){
                 </ul>
                 </div>
             </section>
-            <div class="cont">
-                <p class="cont_span">직군/직무를 입력하면 관련 콘텐츠를 추천해 드려요.
-                    <em class="LineBanner_LineBanner__emoji__69eEU">👀</em>
+            <div className="cont">
+                <p className="cont_span">직군/직무를 입력하면 관련 콘텐츠를 추천해 드려요.
+                    <em className="LineBanner_LineBanner__emoji__69eEU">👀</em>
                 </p> 
             </div>
         </div>

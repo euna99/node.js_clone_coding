@@ -17,7 +17,6 @@ import Footer from'./Footer';
         <Main_reason_sec/>
         <Main_sec_hire/>
         <Footer/>
-
       </div>
       )
     };

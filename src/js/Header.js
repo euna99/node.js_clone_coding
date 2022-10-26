@@ -2,7 +2,22 @@ import '../css/reset.css';
 import '../css/Header.css';
 // import './sign_Modal'
 import { BiSearch } from 'react-icons/bi';
+import SignModal from './sign_Modal';
+import {useState} from 'react';
+
 function Header(){
+    
+        // 모달창 노출 여부 state
+        const [modalOpen, setModalOpen] = useState(false);
+    
+        // 모달창 노출
+        const showModal = () => {
+            setModalOpen(true);
+        }
+
+        const closeModal=() => {
+            setModalOpen(false);
+        }
 return(
     <div className="header">
     <div className="navbar">
@@ -14,7 +29,7 @@ return(
             <div id="hamber_hover">
                 <ul>
                     <li className="imgbar_li">직군전체</li>
-                    <li className="imgbar_li"></li>
+                    <li className="imgbar_li">개발</li>
                     <li className="imgbar_li">경영</li>
                     <li className="imgbar_li">마케팅</li>
                     <li className="imgbar_li">디자인</li>
@@ -54,13 +69,14 @@ return(
             <button id="serch">
                 <BiSearch/>
             </button>
-            <button
-            id="sign">회원가입/로그인</button> 
+            <button onClick={showModal}
+            id="sign">회원가입/로그인</button>
+            {modalOpen===true ?<SignModal modalOpen={modalOpen} closeModal={closeModal}/>:null}
             <button id="service">기업서비스</button>
         </div>
     </div> 
 </div>
-   );
+    );
  }
 
  export default Header;
