@@ -1,4 +1,3 @@
-
 import DevFilter from './Dev_Filter';
 
     function Dev_Page(){
@@ -8,5 +7,5 @@ import DevFilter from './Dev_Filter';
         </div>
         )
     };
-
+    
 export default Dev_Page;

@@ -49,7 +49,7 @@ function SignModal({ modalOpen ,closeModal }) {
                     <p>apple</p>
                 </button>
             </div>
-            {/* <a className="login_bottom" href="">비밀번호를 잊으셨나요?</a> */}
+            <a className="login_bottom" href="">비밀번호를 잊으셨나요?</a>
         </div>
         </div>
 

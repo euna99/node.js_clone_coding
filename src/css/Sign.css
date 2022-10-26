@@ -2,7 +2,7 @@
 .login_wrapper{
     top: 50%;
     position:fixed;
-    left: 50%;
+    left: 40%;
     /* transform: translate(-50%, -50%); */
     text-align: center;
     background-color: #fff;
