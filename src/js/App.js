@@ -7,7 +7,7 @@ import Dev_page from "./Dev_page";
 import Page3 from "./Page3";
 
 function App() {
- return (
+return (
   <BrowserRouter>
     <Header/>
         <Routes>

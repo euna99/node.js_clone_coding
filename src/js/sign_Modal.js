@@ -1,10 +1,12 @@
-import { useState } from 'react';
 import '../css/Sign.css';
 
 function SignModal({ modalOpen ,closeModal }) {
     // const[closebtn,setModalOpen]=useState(true);
-    
-    
+    const checkEmail=(e)=>{
+        var regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i
+    // 형식에 맞는 경우 true 리턴
+    console.log('이메일 유효성 검사 :: ', regExp.test(e.target.value))
+    }
     return (
     <div>
         <div className = "login_wrapper">
@@ -26,7 +28,8 @@ function SignModal({ modalOpen ,closeModal }) {
             
             <div className="form">  
                 <span>이메일</span>
-                <input className = "login_email" type="text" name="id" placeholder="이메일"/>
+                <input className = "login_email" type="email" name="id" placeholder="이메일" 
+                onBlur={checkEmail} />
                 <button className = "login_btn" type="button">이메일로 계속하기</button>
             </div> 
             <p className="sign_or">또는</p>
@@ -50,6 +53,7 @@ function SignModal({ modalOpen ,closeModal }) {
                 </button>
             </div>
             <a className="login_bottom" href="">비밀번호를 잊으셨나요?</a>
+            <hr className="divider"/>
         </div>
         </div>
 
