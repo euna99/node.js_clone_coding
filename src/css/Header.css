@@ -80,6 +80,7 @@
 .center li{
     height: inherit;
     float:left;
+    cursor: pointer;
 }
 
 .center a{
