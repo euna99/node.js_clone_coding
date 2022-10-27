@@ -146,9 +146,6 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: -.3px;
-    color: #333;
-    margin: 20px 0 14px;
-    width: 1060px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -159,7 +156,8 @@
     margin:0 auto;
     display: flex;
 }
-.fun_div a{
+
+.a_instead{
     width:180px;
     height:230px;
     border: 0.5px solid #e1e2e3;
