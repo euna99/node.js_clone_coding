@@ -5,7 +5,7 @@ function SignModal({ modalOpen ,closeModal }) {
     const checkEmail=(e)=>{
         var regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i
     // 형식에 맞는 경우 true 리턴
-    console.log('이메일 유효성 검사 :: ', regExp.test(e.target.value))
+        console.log('이메일 유효성 검사 :: ', regExp.test(e.target.value))
     }
     return (
     <div>

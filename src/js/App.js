@@ -8,7 +8,7 @@ import Page3 from "./Page3";
 
 function App() {
 return (
-  <BrowserRouter>
+<BrowserRouter>
     <Header/>
         <Routes>
             <Route path="/" element={<Main />} />
