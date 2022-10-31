@@ -15,8 +15,8 @@ function Main_sec_02(){
                             <img src={article.imgAdress} alt={article.imgAlt} />
                         </div>
                         <p className="tit_p">{article.imgTitle}</p>
-                        <div className="infor_p">
-                            {article.imgtag}
+                        <div className="sec_article_Tag">
+                            {article.imgTag}
                         </div>
                     </li>
                 ))};

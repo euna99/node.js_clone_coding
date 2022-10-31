@@ -81,7 +81,7 @@ function Main_Sec_01(){
                 ))};
                 </ul>
                 <div className="more">
-                    <div className="more_btn">더 많은 콘텐츠 보기</div>
+                    <button className="more_btn">더 많은 콘텐츠 보기</button>
                 </div>     
             </div>
         </section>
