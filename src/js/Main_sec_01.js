@@ -1,4 +1,5 @@
 import '../css/main.css';
+import dummySec01 from'../json/Main_sec_01_site.json';
 function Main_Sec_01(){
 
     return(
@@ -67,74 +68,32 @@ function Main_Sec_01(){
             
             <div className="wrapper_first">
                 <ul className="site">
-                    <li className="imgbar_li">
-                
-                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210915%2F2%2F16220799.jpg&w=500&q=75"
-                            alt=""/>
-                            <p className="tit_p">포토폴리오 개선하기</p>
-                            <p className="infor_p">이제부터 본격적으로 애자일 팀을 만들어 볼까요? '라인싸몰'을 운영하는 가상의 팀을 통해 OKR을 설정하고 Portfolio Backlog를 설정하는 방법에 대해 알아봅니다.</p>
-                        
+                {dummySec01.site.map((site) => (
+                    <li key={site.id}>
+                        <div>
+                            <img src={site.imgAdress} alt={site.imgAlt} />
+                        </div>
+                        <p className="tit_p">{site.imgTitle}</p>
+                        <div className="infor_p">
+                            {site.imgInfor}
+                        </div>
                     </li>
-                    <li className="imgbar_li">
+                ))}
+                ;
+                        
+            
+                               
+                  {/* <li className="imgbar_li">
                         
                             <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20211124%2F7%2F27374484.jpg&w=500&q=75"
                             alt=""/>
                             <p className="tit_p">포토폴리오 개선하기</p>
                             <p className="infor_p">이제부터 본격적으로 애자일 팀을 만들어 볼까요? '라인싸몰'을 운영하는 가상의 팀을 통해 OKR을 설정하고 Portfolio Backlog를 설정하는 방법에 대해 알아봅니다.</p>
                         
-                    </li>
-                    <li className="imgbar_li">
-                        
-                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20211124%2F7%2F27374484.jpg&w=500&q=75"
-                            alt=""/>
-                            <p className="tit_p">포토폴리오 개선하기</p>
-                            <p className="infor_p">이제부터 본격적으로 애자일 팀을 만들어 볼까요? '라인싸몰'을 운영하는 가상의 팀을 통해 OKR을 설정하고 Portfolio Backlog를 설정하는 방법에 대해 알아봅니다.</p>
-                        
-                    </li>
-                    <li className="imgbar_li">
-                        
-                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20211124%2F7%2F27374484.jpg&w=500&q=75"
-                            alt=""/>
-                            <p className="tit_p">포토폴리오 개선하기</p>
-                            <p className="infor_p">이제부터 본격적으로 애자일 팀을 만들어 볼까요? '라인싸몰'을 운영하는 가상의 팀을 통해 OKR을 설정하고 Portfolio Backlog를 설정하는 방법에 대해 알아봅니다.</p>
-                        
-                    </li>
-                    <li className="imgbar_li">
-                        
-                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20211124%2F7%2F27374484.jpg&w=500&q=75"
-                            alt=""/>
-                            <p className="tit_p">포토폴리오 개선하기</p>
-                            <p className="infor_p">이제부터 본격적으로 애자일 팀을 만들어 볼까요? '라인싸몰'을 운영하는 가상의 팀을 통해 OKR을 설정하고 Portfolio Backlog를 설정하는 방법에 대해 알아봅니다.</p>
-                        
-                    </li>
-                    
-                    <li className="imgbar_li">
-                        
-                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20211124%2F7%2F27374484.jpg&w=500&q=75"
-                            alt=""/>
-                            <p className="tit_p">포토폴리오 개선하기</p>
-                            <p className="infor_p">이제부터 본격적으로 애자일 팀을 만들어 볼까요? '라인싸몰'을 운영하는 가상의 팀을 통해 OKR을 설정하고 Portfolio Backlog를 설정하는 방법에 대해 알아봅니다.</p>
-                        
-                    </li>
-                    <li className="imgbar_li">
-                        
-                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20211124%2F7%2F27374484.jpg&w=500&q=75"
-                            alt=""/>
-                            <p className="tit_p">포토폴리오 개선하기</p>
-                            <p className="infor_p">이제부터 본격적으로 애자일 팀을 만들어 볼까요? '라인싸몰'을 운영하는 가상의 팀을 통해 OKR을 설정하고 Portfolio Backlog를 설정하는 방법에 대해 알아봅니다.</p>
-                        
-                    </li>
-                    <li className="imgbar_li">
-                        
-                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20211124%2F7%2F27374484.jpg&w=500&q=75"
-                            alt=""/>
-                            <p className="tit_p">포토폴리오 개선하기</p>
-                            <p className="infor_p">이제부터 본격적으로 애자일 팀을 만들어 볼까요? '라인싸몰'을 운영하는 가상의 팀을 통해 OKR을 설정하고 Portfolio Backlog를 설정하는 방법에 대해 알아봅니다.</p>
-                        
-                    </li>      
+                    </li>  */}
                 </ul>
                 <div className="more">
-                    <button className="more_btn">더 많은 콘텐츠 보기</button>
+                    <div className="more_btn">더 많은 콘텐츠 보기</div>
                 </div>     
             </div>
         </section>
