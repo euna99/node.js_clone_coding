@@ -3,7 +3,12 @@ import '../css/Sign.css';
 
 function SignModal({ modalOpen ,closeModal }) {
     // const[closebtn,setModalOpen]=useState(true);
-    
+    const checkEmail = (e) => {
+        var regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i
+        // 형식에 맞는 경우 true 리턴
+        console.log('이메일 유효성 검사 :: ', regExp.test(e.target.value))
+    }
+ 
     
     return (
     <div>
@@ -14,7 +19,6 @@ function SignModal({ modalOpen ,closeModal }) {
                 className="sign_close_btn"> x </button>
                 {modalOpen?true:""}
             </div>
-        
             <div className="sign_h">
                 <h1>직장인을 위한
                     <br/>커리어 플랫폼, 원티드!
@@ -26,7 +30,7 @@ function SignModal({ modalOpen ,closeModal }) {
             
             <div className="form">  
                 <span>이메일</span>
-                <input className = "login_email" type="text" name="id" placeholder="이메일"/>
+                <input className = "login_email" type="text" name="id" placeholder="이메일" onBlur={checkEmail} />
                 <button className = "login_btn" type="button">이메일로 계속하기</button>
             </div> 
             <p className="sign_or">또는</p>

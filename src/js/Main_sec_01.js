@@ -2,24 +2,23 @@ import '../css/main.css';
 function Main_Sec_01(){
 
     return(
-
         <div className="div_whole">
-        <section className="img_wrap">
-            <ul className="imgbar">
-                <li className="imgbar_li">
-                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1843%2F6e4ca95f.jpg&w=1060&q=100" />
-                </li>
-                <li className="imgbar_li">
-                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1851%2F62d57330.jpg&w=1060&q=100" />
-                </li>
-                <li className="imgbar_li">
-                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1844%2F3d999be3.jpg&w=1060&q=100" />
-                </li>
-                <li className="imgbar_li">
-                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1826%2F849c1703.jpg&w=1060&q=100" />
-                </li>
-            </ul>
-        </section>
+            <section className="img_wrap">
+                <ul className="imgbar">
+                    <li className="imgbar_li">
+                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1843%2F6e4ca95f.jpg&w=1060&q=100" />
+                    </li>
+                    <li className="imgbar_li">
+                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1851%2F62d57330.jpg&w=1060&q=100" />
+                    </li>
+                    <li className="imgbar_li">
+                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1844%2F3d999be3.jpg&w=1060&q=100" />
+                    </li>
+                    <li className="imgbar_li">
+                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1826%2F849c1703.jpg&w=1060&q=100" />
+                    </li>
+                </ul>
+            </section>
 
 
         <section className="sec_first">
@@ -30,7 +29,6 @@ function Main_Sec_01(){
                     </button>
                 </h2>
             </div>
-
             <div className="bar">
                     <button className="btnb">
                         <span>IT기술</span>
@@ -66,10 +64,11 @@ function Main_Sec_01(){
                         <span>...</span>
                     </button>
             </div>
+            
             <div className="wrapper_first">
                 <ul className="site">
                     <li className="imgbar_li">
-                        
+                
                             <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210915%2F2%2F16220799.jpg&w=500&q=75"
                             alt=""/>
                             <p className="tit_p">포토폴리오 개선하기</p>
