@@ -58,8 +58,20 @@ function Main_Sec_01(){
                     <button className="btnb">
                         <span>IT기술</span>
                     </button>
+                    <button className="btnb">
+                        <span>IT기술</span>
+                    </button>
+                    <button className="btnb">
+                        <span>IT기술</span>
+                    </button>
+                    <button className="btnb">
+                        <span>IT기술</span>
+                    </button>
+                    <button className="btnb">
+                        <span>IT기술</span>
+                    </button>
                     <button id="btna">
-                        <span>  </span>
+                        <span> > </span>
                     </button>
                     <button id="btnd">
                         <span>...</span>
