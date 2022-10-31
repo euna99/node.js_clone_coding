@@ -68,14 +68,14 @@ function Main_Sec_01(){
             
             <div className="wrapper_first">
                 <ul className="site">
-                {dummySec01.site.map((site) => (
-                    <li key={site.id}>
+                {dummySec01.CareerInsite.map((CareerInsite) => (
+                    <li key={CareerInsite.id}>
                         <div>
-                            <img src={site.imgAdress} alt={site.imgAlt} />
+                            <img src={CareerInsite.imgAdress} alt={CareerInsite.imgAlt} />
                         </div>
-                        <p className="tit_p">{site.imgTitle}</p>
+                        <p className="tit_p">{CareerInsite.imgTitle}</p>
                         <div className="infor_p">
-                            {site.imgInfor}
+                            {CareerInsite.imgInfor}
                         </div>
                     </li>
                 ))};

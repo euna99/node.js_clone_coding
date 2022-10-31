@@ -1,12 +1,11 @@
 {
-    "site":[
-
+    "CareerInsite":[
         
         {
             "id": 0,
-            "imgAdress":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20220321%2F8%2F77214252.jpg&w=500&q=75",
-            "imgTitle":"Line X Wated Session 4-2",
-            "imgInfor":"이번 영상에서는 본격적으로 애자일을 확장해는 방법에 대해 알아봅니다. ART를 설정하고 PI Planning의 구체적인 방법에 대해 다루고 있는데요,",
+            "imgAdress":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20220307%2F9%2F76347041.jpg&w=500&q=75",
+            "imgTitle":"Line X Wated Session 2-1",
+            "imgInfor":"이제부터 본격적으로 애자일 팀을 만들어 볼까요? '라인싸몰'을 운영하는 가상의 팀을 통해 OKR을 설정하고 Portfolio Backlog를 설정하는 방법에 대해 알아봅니다.",
             "imgAlt":""
         }, 
         { 
