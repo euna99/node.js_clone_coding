@@ -1,4 +1,5 @@
 import '../css/main.css';
+import dummySec02 from'../json/Main_sec_02_artcle.json'
 function Main_sec_02(){
     return(
         <section className="sec_second">
@@ -8,42 +9,17 @@ function Main_sec_02(){
             </div>
             <div className="wrapper_second">
                 <ul className="article">
-                    <li className="imgbar_li">
-                            <div className="article_img">
-                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2432%2Fbf1903f2.jpg&amp;w=800&amp;q=75" alt="선선한 가을 날씨에 어울릴 아티클 추천 리스트" className="Thumbnail_Thumbnail__image__NlEX0 undefined" loading="lazy"/>
-                            </div>
-                            <div className="article_p">
-                                <p className="article_tit">선선한 가을 날씨에 어울릴 아티클 추천 리스트</p>
-                                <p className="article_p">#마케팅·광고 #커리어고민 #시리즈 </p>
-                            </div>
+                {dummySec02.article.map((article) => (
+                    <li key={article.id}>
+                        <div>
+                            <img src={article.imgAdress} alt={article.imgAlt} />
+                        </div>
+                        <p className="tit_p">{article.imgTitle}</p>
+                        <div className="infor_p">
+                            {article.imgtag}
+                        </div>
                     </li>
-                    <li className="imgbar_li">
-                            <div className="article_img">
-                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2432%2Fbf1903f2.jpg&amp;w=800&amp;q=75" alt="선선한 가을 날씨에 어울릴 아티클 추천 리스트" className="Thumbnail_Thumbnail__image__NlEX0 undefined" loading="lazy"/>
-                            </div>
-                            <div className="article_p">
-                                <p className="article_tit">선선한 가을 날씨에 어울릴 아티클 추천 리스트</p>
-                                <p className="article_p">#마케팅·광고 #커리어고민 #시리즈 </p>
-                            </div>
-                    </li>
-                    <li className="imgbar_li">
-                            <div className="article_img">
-                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2432%2Fbf1903f2.jpg&amp;w=800&amp;q=75" alt="선선한 가을 날씨에 어울릴 아티클 추천 리스트" className="Thumbnail_Thumbnail__image__NlEX0 undefined" loading="lazy"/>
-                            </div>
-                            <div className="article_p">
-                                <p className="article_tit">선선한 가을 날씨에 어울릴 아티클 추천 리스트</p>
-                                <p className="article_p">#마케팅·광고 #커리어고민 #시리즈 </p>
-                            </div>
-                    </li>
-                    <li className="imgbar_li">
-                            <div className="article_img">
-                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2432%2Fbf1903f2.jpg&amp;w=800&amp;q=75" alt="선선한 가을 날씨에 어울릴 아티클 추천 리스트" className="Thumbnail_Thumbnail__image__NlEX0 undefined" loading="lazy"/>
-                            </div>
-                            <div className="article_p">
-                                <p className="article_tit">선선한 가을 날씨에 어울릴 아티클 추천 리스트</p>
-                                <p className="article_p">#마케팅·광고 #커리어고민 #시리즈 </p>
-                            </div>
-                    </li>
+                ))};
                 </ul>
             </div>
         </section>

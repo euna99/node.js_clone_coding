@@ -78,19 +78,7 @@ function Main_Sec_01(){
                             {site.imgInfor}
                         </div>
                     </li>
-                ))}
-                ;
-                        
-            
-                               
-                  {/* <li className="imgbar_li">
-                        
-                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20211124%2F7%2F27374484.jpg&w=500&q=75"
-                            alt=""/>
-                            <p className="tit_p">포토폴리오 개선하기</p>
-                            <p className="infor_p">이제부터 본격적으로 애자일 팀을 만들어 볼까요? '라인싸몰'을 운영하는 가상의 팀을 통해 OKR을 설정하고 Portfolio Backlog를 설정하는 방법에 대해 알아봅니다.</p>
-                        
-                    </li>  */}
+                ))};
                 </ul>
                 <div className="more">
                     <div className="more_btn">더 많은 콘텐츠 보기</div>

@@ -220,12 +220,12 @@
     padding: 10px;
 } 
 
-.article_img img{
+.article img{
     width: 250px;
     height: 175px;
 }
 
-.article_div{
+/* .article_div{
     width: 250px;
     height: 78px;
 }
@@ -239,11 +239,11 @@
     line-height: 1.5rem;
 
 }
-.article_p{
+.article{
     width: 250px;
     height: 17.14px;
     margin:13px 0px 0px;
-}
+} */
 
 /* sec_2번 3번 한번에 끝 */
 .cont{
