@@ -1,26 +1,26 @@
 import '../css/main.css';
+import dummySec01 from'../json/Main_sec_01_site.json';
 function Main_Sec_01(){
 
  // map 함수로 li 컴포넌트 받아오기 4주차 영상 찾아보기 
     return(
-
         <div className="div_whole">
-        <section className="img_wrap">
-            <ul className="imgbar">
-                <li className="imgbar_li">
-                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1843%2F6e4ca95f.jpg&w=1060&q=100" />
-                </li>
-                <li className="imgbar_li">
-                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1851%2F62d57330.jpg&w=1060&q=100" />
-                </li>
-                <li className="imgbar_li">
-                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1844%2F3d999be3.jpg&w=1060&q=100" />
-                </li>
-                <li className="imgbar_li">
-                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1826%2F849c1703.jpg&w=1060&q=100" />
-                </li>
-            </ul>
-        </section>
+            <section className="img_wrap">
+                <ul className="imgbar">
+                    <li className="imgbar_li">
+                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1843%2F6e4ca95f.jpg&w=1060&q=100" />
+                    </li>
+                    <li className="imgbar_li">
+                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1851%2F62d57330.jpg&w=1060&q=100" />
+                    </li>
+                    <li className="imgbar_li">
+                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1844%2F3d999be3.jpg&w=1060&q=100" />
+                    </li>
+                    <li className="imgbar_li">
+                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1826%2F849c1703.jpg&w=1060&q=100" />
+                    </li>
+                </ul>
+            </section>
 
 
         <section className="sec_first">
@@ -31,7 +31,6 @@ function Main_Sec_01(){
                     </button>
                 </h2>
             </div>
-
             <div className="bar">
                     <button className="btnb">
                         <span>IT기술</span>
@@ -60,14 +59,28 @@ function Main_Sec_01(){
                     <button className="btnb">
                         <span>IT기술</span>
                     </button>
+                    <button className="btnb">
+                        <span>IT기술</span>
+                    </button>
+                    <button className="btnb">
+                        <span>IT기술</span>
+                    </button>
+                    <button className="btnb">
+                        <span>IT기술</span>
+                    </button>
+                    <button className="btnb">
+                        <span>IT기술</span>
+                    </button>
                     <button id="btna">
-                        <span>  </span>
+                        <span> > </span>
                     </button>
                     <button id="btnd">
                         <span>...</span>
                     </button>
             </div>
+            
             <div className="wrapper_first">
+<<<<<<< HEAD
             <ul className="site">
                 <li className="imgbar_li">
                     
@@ -135,6 +148,21 @@ function Main_Sec_01(){
                     
                 </li>      
             </ul>
+=======
+                <ul className="site">
+                {dummySec01.CareerInsite.map((CareerInsite) => (
+                    <li key={CareerInsite.id}>
+                        <div>
+                            <img src={CareerInsite.imgAdress} alt={CareerInsite.imgAlt} />
+                        </div>
+                        <p className="tit_p">{CareerInsite.imgTitle}</p>
+                        <div className="infor_p">
+                            {CareerInsite.imgInfor}
+                        </div>
+                    </li>
+                ))};
+                </ul>
+>>>>>>> 51ae59c51c780ac71b43f4ec052effd65d59f1e7
                 <div className="more">
                     <button className="more_btn">더 많은 콘텐츠 보기</button>
                 </div>     

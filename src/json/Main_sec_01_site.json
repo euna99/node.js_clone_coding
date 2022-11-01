@@ -1,0 +1,57 @@
+{
+    "CareerInsite":[
+        
+        {
+            "id": 0,
+            "imgAdress":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20220307%2F9%2F76347041.jpg&w=500&q=75",
+            "imgTitle":"Line X Wated Session 2-1",
+            "imgInfor":"이제부터 본격적으로 애자일 팀을 만들어 볼까요? '라인싸몰'을 운영하는 가상의 팀을 통해 OKR을 설정하고 Portfolio Backlog를 설정하는 방법에 대해 알아봅니다.",
+            "imgAlt":""
+        }, 
+        { 
+            "id": 1,
+            "imgAdress":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20220325%2F2%2F54850213.jpg&w=500&q=75",
+            "imgTitle":"Line X Wated Session 4-2",
+            "imgInfor":"이번 영상에서는 본격적으로 애자일을 확장해는 방법에 대해 알아봅니다. ART를 설정하고 PI Planning의 구체적인 방법에 대해 다루고 있는데요,",
+            "imgAlt":""
+        },
+        {
+            "id": 2,
+            "imgAdress":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20220315%2F1%2F12856472.jpg&w=500&q=75",
+            "imgTitle":"Line X Wated Session 4-2",
+            "imgInfor":"이번 영상에서는 본격적으로 애자일을 확장해는 방법에 대해 알아봅니다. ART를 설정하고 PI Planning의 구체적인 방법에 대해 다루고 있는데요,"
+        },
+        {
+            "id": 3,
+            "imgAdress":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fi.ytimg.com%2Fvi%2FykYkkYngR_o%2Fhqdefault.jpg%3Fsqp%3D-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg%3D%3D%26rs%3DAOn4CLDm4rsREG7kjSLcBDT4lFW3z3leVg&w=500&q=75",
+            "imgTitle":"Line X Wated Session 4-2",
+            "imgInfor":"이번 영상에서는 본격적으로 애자일을 확장해는 방법에 대해 알아봅니다. ART를 설정하고 PI Planning의 구체적인 방법에 대해 다루고 있는데요,"
+        },
+        {
+            "id": 4,
+            "imgAdress":"https://image.wanted.co.kr/optimize?src=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fguest%2Fimage%2FTjHht4btnoG6aaEY24qwZAKGQiU.jpg&w=500&q=75",
+            "imgTitle":"Line X Wated Session 4-2",
+            "imgInfor":"이번 영상에서는 본격적으로 애자일을 확장해는 방법에 대해 알아봅니다. ART를 설정하고 PI Planning의 구체적인 방법에 대해 다루고 있는데요,"
+        },
+        {
+            "id": 5,
+            "imgAdress":"https://image.wanted.co.kr/optimize?src=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fguest%2Fimage%2FTjHht4btnoG6aaEY24qwZAKGQiU.jpg&w=500&q=75",
+            "imgTitle":"Line X Wated Session 4-2",
+            "imgInfor":"이번 영상에서는 본격적으로 애자일을 확장해는 방법에 대해 알아봅니다. ART를 설정하고 PI Planning의 구체적인 방법에 대해 다루고 있는데요,"
+        },
+        {
+            "id": 6,
+            "imgAdress":"https://image.wanted.co.kr/optimize?src=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2F4DBT%2Fimage%2FXVb9OHOjROnfaHQI5FDxHJdkwPg.png&w=500&q=75",
+            "imgTitle":"Line X Wated Session 4-2",
+            "imgInfor":"이번 영상에서는 본격적으로 애자일을 확장해는 방법에 대해 알아봅니다. ART를 설정하고 PI Planning의 구체적인 방법에 대해 다루고 있는데요,"
+        },
+        {
+            "id": 7,
+            "imgAdress":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20220307%2F9%2F93662568.jpg&w=500&q=75",
+            "imgTitle":"Line X Wated Session 4-2",
+            "imgInfor":"이번 영상에서는 본격적으로 애자일을 확장해는 방법에 대해 알아봅니다. ART를 설정하고 PI Planning의 구체적인 방법에 대해 다루고 있는데요,"
+        }
+    ]
+
+}
+

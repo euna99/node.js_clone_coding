@@ -64,9 +64,9 @@
     margin: 30px auto;
     flex-direction: row;
     align-items: center;
-    /* overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-behavior: ; */
+    white-space: nowrap;
+    overflow: scroll;
+    display: flex;
 }
 
 .bar button{
@@ -74,24 +74,19 @@
     padding: 9px 22px;
     border: 1px solid #e1e2e3;
     background-color: white;
+    float: left;
 }
 .btnb{
     font-size: 15px;
-    /* min-width: 100px;
-    width:auto; */
     border-radius: 50px;
-    margin:auto;
     height: 40px;
-    /* font-size: inherit;
-    font-weight: inherit;
-    display: inherit; */
 }
 
 #btna{
     width: 40px;
     height: 40px;
     border: 1px solid #e1e2e3;
-    border-radius : 50%
+    border-radius : 50%;
 }
 #btnd{
     width: 40px;
@@ -220,12 +215,17 @@
     padding: 10px;
 } 
 
-.article_img img{
+.article img{
     width: 250px;
     height: 175px;
 }
+.sec_article_Tag{
+    width: 250px;
+    font-size:11px;
+    font-weight: 600;
+}
 
-.article_div{
+/* .article_div{
     width: 250px;
     height: 78px;
 }
@@ -239,11 +239,11 @@
     line-height: 1.5rem;
 
 }
-.article_p{
+.article{
     width: 250px;
     height: 17.14px;
     margin:13px 0px 0px;
-}
+} */
 
 /* sec_2번 3번 한번에 끝 */
 .cont{
