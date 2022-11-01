@@ -2,24 +2,22 @@ import '../css/page2.css';
 // import {useState} from 'react';
 
 function DevFilter(){
+//   let dev_fliter=document.querySelector(".dev_fliter")
+//   let dev_article=document.querySelector(".dev_article")
+//   window.addEventListener('scroll', () => { 
+//     let top=document.documentElement.scrollTop
+//     console.log(top)
+//     if (top>300){
+//         dev_fliter.style.position="fixed"
+//         dev_article.style.display="none"
 
-
-  let dev_fliter=document.querySelector(".dev_fliter")
-  let dev_article=document.querySelector(".dev_article")
-  window.addEventListener('scroll', () => { 
-    let top=document.documentElement.scrollTop
-    console.log(top)
-    if (top>300){
-        dev_fliter.style.position="fixed"
-        dev_article.style.display="none"
-
-    }
-    // console.log(window.scrollX, window.scrollY);
-    else{
-        dev_fliter.style.position="unset"
-        dev_article.style.display="block"
-    }
-});
+//     }
+//     // console.log(window.scrollX, window.scrollY);
+//     else{
+//         dev_fliter.style.position="unset"
+//         dev_article.style.display="block"
+//     }
+// });
     return(
         <div className="dev_whole">
         <div className="dev_article">
