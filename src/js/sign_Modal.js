@@ -23,7 +23,6 @@ function SignModal({ modalOpen ,closeModal }) {
                 <button onClick={closeModal}
                 className="sign_close_btn"> x </button>
                 {modalOpen?true:""}
-               
             </div>
             <div className="sign_h">
                 <h1>직장인을 위한
@@ -63,7 +62,6 @@ function SignModal({ modalOpen ,closeModal }) {
             <hr className="divider"/>
         </div>
         </div>
-
     );
 }
 
