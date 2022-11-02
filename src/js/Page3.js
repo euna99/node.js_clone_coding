@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import '../css/page3.css'
 import '../css/reset.css'
 
