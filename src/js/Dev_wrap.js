@@ -26,7 +26,7 @@ function DevWrap(){
                     <li key={dev.id}>
                         <div className="dev_wrap_top">
                             <img className="dev_wrap_img"
-                            src={dev.imgUrl}/>
+                            src={dev.imgUrl} alt={dev.alt}/>
                         </div>
                         <div className="dev_wrap_bottom">
                         <h3>{dev.imgTit}</h3>

@@ -27,9 +27,10 @@
 }
 
 .fun_div{
-    width: 1060px;
+    width: 1080px;
     height: 270px;
     display: flex;
+    margin:0 auto;
 }
 
 .a_instead{
@@ -37,8 +38,9 @@
     height:271px;
     border: 0.5px solid #e1e2e3;
     align-items: center;
-    margin : 0 auto ; 
+    margin: 0 auto;
 }
+
 .fun_div img{
     width:197px;
     height: 120px;

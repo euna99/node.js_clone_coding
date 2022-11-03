@@ -4,12 +4,14 @@ import {BsFillBookmarkFill} from 'react-icons/bs';
 
 function DevBookMark (){
     return(
+      <div>
       <div className="bookmark">
         <div className="bookmark_tit">
           <BsFillBookmarkFill/>
           <p>북마크 모아보기</p>
         </div>
         <h3 className="fun">적극 채용중인 회사</h3>
+      </div>
 
       <ul className="fun_div">
         <li className="a_instead">
