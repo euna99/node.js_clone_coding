@@ -1,0 +1,70 @@
+{
+    "dev":[
+        {
+            "id":0,
+            "imgUrl":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F6100%2Fteaoeirapsopqxsl__1080_790.jpg&w=1000&q=75",
+            "imgTit":"JAVA 백앤드 개발자",
+            "imgPot":"경기 한국",
+            "money":"채용보상금 1,000,000원"
+        },        
+        {
+            "id":1,
+            "imgUrl":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F316%2Friu3rhimvtk7yeac__1080_790.jpg&w=1000&q=75",
+            "imgTit":"ML Engineer",
+            "imgPot":"경기 한국",
+            "money":"채용보상금 1,000,000원"
+        },        
+        {
+            "id":2,
+            "imgUrl":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F33785%2Frvafm8buv4nygycr__1080_790.jpg&w=1000&q=75",
+            "imgTit":"JAVA 백앤드 개발자",
+            "imgPot":"경기 한국",
+            "money":"채용보상금 1,000,000원"
+        },        
+        {
+            "id":3,
+            "imgUrl":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F805%2Fqmeqtcb0lrqseulw__1080_790.png&w=1000&q=75",
+            "imgTit":"프론트엔드 개발 PM",
+            "imgPot":"서울 한국",
+            "money":"채용보상금 1,000,000원"
+        },        
+        {
+            "id":4,
+            "imgUrl":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F2141%2Fdzdlbejro9honjx1__1080_790.jpg&w=1000&q=75",
+            "imgTit":"웹서비스 QA 엔지니어",
+            "imgPot":"서울 한국",
+            "money":"채용보상금 1,000,000원"
+        },        
+        {
+            "id":5,
+            "imgUrl":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F2141%2Fdzdlbejro9honjx1__1080_790.jpg&w=1000&q=75",
+            "imgTit":"웹서비스 QA 엔지니어",
+            "imgPot":"서울 한국",
+            "money":"채용보상금 1,000,000원"
+        },       
+        {
+            "id":6,
+            "imgUrl":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32383%2Fw7pt1uvokirb2pjd__1080_790.jpg&w=1000&q=75",
+            "imgTit":"모바일 데이터 분석 웹서비스 (Back_End)개발",
+            "imgPot":"서울 한국",
+            "money":"채용보상금 1,000,000원"
+        },        
+        {
+            "id":7,
+            "imgUrl":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F2141%2Fdzdlbejro9honjx1__1080_790.jpg&w=1000&q=75",
+            "imgTit":"검색엔진 설계/운영 개발자",
+            "imgPot":"서울 한국",
+            "money":"채용보상금 1,000,000원"
+        },        
+        {
+            "id":8,
+            "imgUrl":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F34849%2Fhmeamxothnoezwft__1080_790.jpg&w=1000&q=75",
+            "imgTit":"백엔드 엔지니어(Back-end Engineer)",
+            "imgPot":"서울 한국",
+            "money":"채용보상금 1,000,000원"
+        }
+        
+    ]
+
+
+}
