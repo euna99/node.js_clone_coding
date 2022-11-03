@@ -54,7 +54,6 @@
 }
 
 .dev_fliter{
-    height: 133px;
     padding-top: 10px;
     margin-bottom: 25px;
     width: 100%;
@@ -64,11 +63,11 @@
 
 
 .fixedBox{
-    height: 133px;
-    padding-top: 10px;
+    padding-top: 20px;
     width: 100%;
     background-color: white;
     position:fixed;
+    padding-bottom: 0;
 }
 
 
@@ -82,9 +81,9 @@
 
 }
 
-.divider{
+/* .divider{
     border: 0.5px solid #e1e2e3;
-}
+} */
 
 .dev_fliter_one_left button{
     align-items: center;
@@ -119,14 +118,16 @@
 .divider{
     max-width: 1060px;
     margin: 25px auto;
-    background-color: rgba(236,236,236,.7);
+    /* color: rgba(236,236,236,.7); */
+    border: 0.4px solid #e1e2e3;
 }
 
 .Dev_Tag_border{
-    border-bottom: 0.5px solid #e1e2e3;
+    border-bottom: 0.75px solid #e1e2e3;
 }
-
-
+.fixedBox_border{
+    border-bottom: 0.5px solid blue;
+}
 
 .tag{
     overflow-x: hidden;

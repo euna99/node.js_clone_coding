@@ -16,7 +16,8 @@ function SignModal({ modalOpen ,closeModal }) {
     //     var regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i
     // }
     return (
-    <div>
+    <div
+    className="login_background">
         <div className = "login_wrapper">
             <div className="sign_header">
                 <img src="./img/wanted.png" alt=""></img>

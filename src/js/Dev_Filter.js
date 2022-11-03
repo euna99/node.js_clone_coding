@@ -25,7 +25,7 @@ function DevFilter({DevStatus}){
           </div>
         </div>
         <hr className="divider"/>
-      <div className= "Dev_Tag_border" >
+      <div className= {DevStatus ? "fixedBox_border" : "Dev_Tag_border" } >
         <div className="tag">
           <button style={{background: "rgb(242, 251, 245)"}}>
             연봉이 최고의 복지

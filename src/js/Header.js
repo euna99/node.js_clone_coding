@@ -8,10 +8,14 @@ import {Link} from 'react-router-dom';
 
 function Header(){
         // 모달창 노출 여부 state
+        const[style,setStyle]=useState();
         const [modalOpen, setModalOpen] = useState(false);
         // 모달창 노출
         const showModal = () => {
             setModalOpen(true);
+            setStyle({
+                "background-color" : 'rgba(0,0,0,0.8)'
+            })
         }
 
         const closeModal=() => {
