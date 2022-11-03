@@ -1,20 +1,49 @@
-
 import { useEffect, useState } from 'react';
 import '../css/Sign.css';
 
 function SignModal({ modalOpen ,closeModal }) {
     // const[closebtn,setModalOpen]=useState(true);
-
-    const checkEmail = (e) => {
-        var regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i
-        // 형식에 맞는 경우 true 리턴
-        console.log('이메일 유효성 검사 :: ', regExp.test(e.target.value))
+    
+    const User = {
+        email: 'test@example.com'
     }
+    const [email, setEmail] = useState('');
+    const [emailValid, setEmailValid] = useState(false);
+    const [notAllow, setNotAllow] = useState(true);
+    useEffect(() => {
+        if(emailValid===true ) {
+          setNotAllow(false);
+          return;
+        }
+        setNotAllow(true);
+      }, [emailValid]);
 
-    // const[email,setEmail]=useState('');
-    // const handleEmail=()=>{
+      const handleEmail = (e) => {
+        setEmail(e.target.value);
+        const regex =
+          /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+        if (regex.test(e.target.value)) {
+          setEmailValid(true);
+        } else {
+          setEmailValid(false);
+        }
+      };
+
+      const onClickConfirmButton = () => {
+        if(email ===User.email) {
+          alert('로그인에 성공했습니다.')
+        } else {
+          alert("등록되지 않은 회원입니다.");
+        }
+      }
+  
+    // const checkEmail = (e) => {
     //     var regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i
+    //     // 형식에 맞는 경우 true 리턴
+    //     console.log('이메일 유효성 검사 :: ', regExp.test(e.target.value))
     // }
+
+
     return (
     <div
     className="login_background">
@@ -36,8 +65,14 @@ function SignModal({ modalOpen ,closeModal }) {
             
             <div className="form">  
                 <span>이메일</span>
-                <input className = "login_email" type="text" name="id" placeholder="이메일" onBlur={checkEmail}/>
-                <button className = "login_btn" type="button">이메일로 계속하기</button>
+                <input className = "login_email" type="text" name="id" placeholder="이메일" value={email}
+              onChange={handleEmail} />
+                <div className="errorMessageWrap">
+                {!emailValid && email.length > 0 && (
+                <div>올바른 이메일을 입력해주세요.</div>
+                )}
+          </div>
+                <button onClick={onClickConfirmButton} disabled={notAllow} className = "login_btn" type="button">이메일로 계속하기</button>
             </div> 
             <p className="sign_or">또는</p>
             <div className="sign_social">

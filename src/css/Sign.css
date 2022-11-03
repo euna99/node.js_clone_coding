@@ -158,3 +158,8 @@
     height:56px;
     object-fit: contain;
 }
+
+.login_btn:disabled {
+    background-color: #dadada;
+    color: white;
+}
