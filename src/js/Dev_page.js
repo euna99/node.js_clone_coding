@@ -2,30 +2,35 @@ import DevFilter from "./Dev_Filter";
 import DevTitle from "./Dev_title";
 import DevBookMark from "./DevBookMark";
 import DevWrap from "./Dev_wrap";
-import { useState} from "react";
+import { useState,useEffect} from "react";
 
 function Dev_Page() {
-let dev_fliter=document.querySelector(".dev_fliter")
-let dev_article=document.querySelector(".dev_article")
-let bookmark=document.querySelector(".bookmark")
-window.addEventListener('scroll', () => { 
-    let top=document.documentElement.scrollTop
-    console.log(top)
-    if (top>300){
-        dev_fliter.style.position="fixed"
-        dev_article.style.display="none"
 
-    }
-    // console.log(window.scrollX, window.scrollY);
-    else{
-        dev_fliter.style.position="unset"
-        dev_article.style.display="block"
-    }
+const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
+const [DevStatus, setDevStatus] = useState(false);
+function handleScroll() {
+  if (ScrollY > 299) {
+    setScrollY(window.pageYOffset);
+    setDevStatus(true);
+    
+  } else {
+    setScrollY(window.pageYOffset);
+    setDevStatus(false);
+  }
+}
+useEffect(() => {
+  function scrollListener() {
+    window.addEventListener("scroll", handleScroll);
+  } //  window 에서 스크롤을 감시 시작
+  scrollListener(); // window 에서 스크롤을 감시
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  }; //  window 에서 스크롤을 감시를 종료
 });
  return (
   <div>
-    <DevTitle/>
-    <DevFilter />
+    <DevTitle  DevStatus={DevStatus}/>
+    <DevFilter DevStatus={DevStatus}/>
     <DevBookMark />
     <DevWrap />
   </div>

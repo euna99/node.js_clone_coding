@@ -5,8 +5,11 @@
     width:100vw;
     height: 72px;
     padding-top:40px;
-    /* position:fixed; */
-    
+    display: block;
+}
+
+.dev_article_none{
+    display:none;
 }
 
 .dev_nav{
@@ -14,6 +17,7 @@
     height: 32px;
     display: flex;
     margin:0px auto;
+    z-index: 100;
 }
 
 .JobGroup_JobGroup__H1m1m {
@@ -55,8 +59,18 @@
     margin-bottom: 25px;
     width: 100%;
     background-color: white;
-
+    position:unset;
 }
+
+
+.fixedBox{
+    height: 133px;
+    padding-top: 10px;
+    width: 100%;
+    background-color: white;
+    position:fixed;
+}
+
 
 .dev_fliter_one{
     width:1060px;

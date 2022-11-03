@@ -1,9 +1,9 @@
 import '../css/page2.css'
 
-function DevTitle(){
+function DevTitle({DevStatus}){
     return(
         <div className="dev_whole">
-            <div className="dev_article">
+            <div className={DevStatus ? "dev_article_none" : "dev_article" }>
             <div className="dev_nav">
             <button className="JobGroup_JobGroup__H1m1m">
                 <p className="JobGroup_JobGroup__title__nZmec">개발</p>
