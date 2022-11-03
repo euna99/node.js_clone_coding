@@ -5,14 +5,14 @@ import DevWrap from "./Dev_wrap";
 import { useState,useEffect} from "react";
 
 function Dev_Page() {
-
+const[st,set]
 const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
 const [DevStatus, setDevStatus] = useState(false);
 function handleScroll() {
   if (ScrollY > 299) {
     setScrollY(window.pageYOffset);
     setDevStatus(true);
-    
+    dfsf
   } else {
     setScrollY(window.pageYOffset);
     setDevStatus(false);

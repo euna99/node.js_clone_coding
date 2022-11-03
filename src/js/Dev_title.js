@@ -3,6 +3,8 @@ import '../css/page2.css'
 function DevTitle({DevStatus}){
     return(
         <div className="dev_whole">
+            {/* <div className="dev_article"
+            style={{display: DevStatus ?'none' :'block'}}> */}
             <div className={DevStatus ? "dev_article_none" : "dev_article" }>
             <div className="dev_nav">
             <button className="JobGroup_JobGroup__H1m1m">

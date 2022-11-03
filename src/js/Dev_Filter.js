@@ -4,8 +4,7 @@ import '../css/page2.css';
 function DevFilter({DevStatus}){
 
     return(
-        <section
-        className={DevStatus ? "fixedBox" : "dev_fliter" }>
+        <section className={DevStatus ? "fixedBox" : "dev_fliter" }>
         <div className="dev_fliter_one">
           <div className="dev_fliter_one_left">
             <button>
@@ -26,7 +25,7 @@ function DevFilter({DevStatus}){
           </div>
         </div>
         <hr className="divider"/>
-
+      <div className= "Dev_Tag_border" >
         <div className="tag">
           <button style={{background: "rgb(242, 251, 245)"}}>
             연봉이 최고의 복지
@@ -61,6 +60,7 @@ function DevFilter({DevStatus}){
             재택근무
             <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F5d873f3a-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75" alt="재택근무" />
           </button>
+          </div>
         </div>
       </section>
     );

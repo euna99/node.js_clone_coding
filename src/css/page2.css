@@ -82,6 +82,10 @@
 
 }
 
+.divider{
+    border: 0.5px solid #e1e2e3;
+}
+
 .dev_fliter_one_left button{
     align-items: center;
     display: inline-flex;
@@ -117,10 +121,16 @@
     margin: 25px auto;
     background-color: rgba(236,236,236,.7);
 }
+
+.Dev_Tag_border{
+    border-bottom: 0.5px solid #e1e2e3;
+}
+
+
+
 .tag{
     overflow-x: hidden;
     width:1060px;
-    border-bottom: 1px solid  gray;
     padding-bottom:25px;
     margin:0 auto;
 }
