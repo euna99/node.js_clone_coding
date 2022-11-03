@@ -158,8 +158,8 @@
 }
 
 .bookmark{
-    width:1060px;
-    margin:0 auto;
+    /* width:1060px;
+    margin:0 auto; */
     display: flex;
     color: #36f;
     font-size: 15px;
@@ -177,7 +177,7 @@
 }
 
 .fun_div{
-    width: 1100px !important;
+    width: 1080px ;
     height: 270px;
     display: flex;
 }

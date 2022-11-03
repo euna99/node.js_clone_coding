@@ -11,8 +11,8 @@ function DevBookMark (){
         </div>
         <h3 className="fun">적극 채용중인 회사</h3>
 
-      <div className="fun_div">
-        <div className="a_instead">
+      <ul className="fun_div">
+        <li className="a_instead">
           <header>
             <img src="../img/unnamed.png" alt="" />
           </header>
@@ -20,11 +20,11 @@ function DevBookMark (){
             <h4>화해</h4>
             <h5>11개 포지션</h5>
           </footer>
-        </div>
+        </li>
 
         
         
-      <div className="a_instead">
+      <li className="a_instead">
           <header>
             <img src="../img/unnamed.png" alt="" />
           </header>
@@ -32,9 +32,9 @@ function DevBookMark (){
             <h4>화해</h4>
             <h5>11개 포지션</h5>
           </footer>
-        </div>
+        </li>
         
-        <div className="a_instead">
+        <li className="a_instead">
           <header>
             <img src="../img/unnamed.png" alt="" />
           </header>
@@ -42,9 +42,9 @@ function DevBookMark (){
             <h4>화해</h4>
             <h5>11개 포지션</h5>
           </footer>
-        </div>
+        </li>
         
-        <div className="a_instead">
+        <li className="a_instead">
           <header>
             <img src="../img/unnamed.png" alt="" />
           </header>
@@ -52,9 +52,9 @@ function DevBookMark (){
             <h4>화해</h4>
             <h5>11개 포지션</h5>
           </footer>
-        </div>
+        </li>
         
-        <div className="a_instead">
+        <li className="a_instead">
           <header>
             <img src="../img/unnamed.png" alt="" />
           </header>
@@ -62,8 +62,8 @@ function DevBookMark (){
             <h4>화해</h4>
             <h5>11개 포지션</h5>
           </footer>
-        </div>
-        </div>
+        </li>
+        </ul>
       </div>
     
     
