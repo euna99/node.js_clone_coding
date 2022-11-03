@@ -5,7 +5,8 @@ function SignModal({ modalOpen ,closeModal }) {
     // const[closebtn,setModalOpen]=useState(true);
     
     const User = {
-        email: 'test@example.com'
+        email: 'a653bc@naver.com'
+        //배열로 선언받고 그중에 하나가 로그인 되면  alert('로그인에 성공했습니다.') 띄우고 싶음 
     }
     const [email, setEmail] = useState('');
     const [emailValid, setEmailValid] = useState(false);
