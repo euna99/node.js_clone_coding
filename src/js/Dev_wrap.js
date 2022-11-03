@@ -14,12 +14,12 @@ function DevWrap(){
               </Link>
             </div>
              <div className="dev_wrap_bottom">
-              <h3>Linux Engineer</h3>
+             <h3>Linux Engineer</h3>
               플라잎<br/>
               응답률 매우 높음<br/>
               경기.한국<br/>
               채용보상금 1,000,000원
-            </div>
+             </div>
           </li>
           <li>
             <div className="dev_wrap_top">

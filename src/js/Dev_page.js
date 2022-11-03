@@ -8,7 +8,7 @@ function Dev_Page() {
 const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
 const [DevStatus, setDevStatus] = useState(false);
 function handleScroll() {
-  if (ScrollY > 299) {
+  if (ScrollY >300) {
     setScrollY(window.pageYOffset);
     setDevStatus(true);
   } else {
@@ -16,6 +16,7 @@ function handleScroll() {
     setDevStatus(false);
   }
 }
+// console.log(ScrollY)
 useEffect(() => {
   function scrollListener() {
     window.addEventListener("scroll", handleScroll);
