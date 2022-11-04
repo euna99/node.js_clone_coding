@@ -18,11 +18,13 @@ function Header(){
         const closeModal=() => {
             setModalOpen(false);
         }
+
 //serchBar 시작
         
         const[searchBarOpen,setSearchBar]=useState(false);
         const showSearchBar = () => {
             setSearchBar(true);
+    
         }
         const closeSearchBar=() => {
             setSearchBar(false);
@@ -78,11 +80,13 @@ return(
 
 
         <div className="right">
-            <button onClick={showSearchBar}
+            <button 
+            onClick={showSearchBar}
             id="serch">
                 <BiSearch/>
                 search </button>
-            {searchBarOpen===true?<SearchBar searchBarOpen={searchBarOpen} closeSearchBar={closeSearchBar}/>:null}
+                {searchBarOpen===true ?(<SearchBar searchBarOpen={searchBarOpen} closeSearchBar={closeSearchBar}/>):("")}
+            
             
             <button onClick={showModal}
             id="sign">회원가입/로그인</button>
