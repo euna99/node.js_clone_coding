@@ -1,7 +1,8 @@
-// import "../css/reset.css";
-// import "../css/SearchBar.css";
+import "../css/reset.css";
+import "../css/SearchBar.css";
 
-function SearchBar({searchBarOpen,closeSearchBar}) {
+function SearchBar({closeSearchBar}) {
+  return(
  <div className="SearchBar_Background">
   <div className="SearchBar_Wrapper">
 
@@ -12,7 +13,6 @@ function SearchBar({searchBarOpen,closeSearchBar}) {
      value=""
     ></input>
    <button onClick={closeSearchBar}> x </button>
-   {searchBarOpen?true:""}
 
    <div>
     <span>추천 태그로 검색해보세요</span>
@@ -24,6 +24,7 @@ function SearchBar({searchBarOpen,closeSearchBar}) {
     <button></button>
    </div>
   </div>
- </div>;
+ </div>
+ );
 }
 export default SearchBar;

@@ -5,6 +5,7 @@ import Main from "./Main";
 import { BrowserRouter,Route,Routes } from "react-router-dom";
 import Dev_page from "./Dev_page";
 import Page3 from "./Page3";
+import SearchBar from "./SearchBar";
 
 function App() {
 return (

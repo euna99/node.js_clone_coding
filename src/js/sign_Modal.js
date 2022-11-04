@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../css/Sign.css';
 
-function SignModal({ modalOpen ,closeModal }) {
+function SignModal({ closeModal }) {
     // const[closebtn,setModalOpen]=useState(true);
     const User = {
         email: 'a653bc@naver.com'
@@ -46,7 +46,7 @@ function SignModal({ modalOpen ,closeModal }) {
                 <img src="./img/wanted.png" alt=""></img>
                 <button onClick={closeModal}
                 className="sign_close_btn"> x </button>
-                {modalOpen?true:""}
+
             </div>
             <div className="sign_h">
                 <h1>직장인을 위한

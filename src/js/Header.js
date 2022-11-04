@@ -23,6 +23,7 @@ function Header(){
         
         const[searchBarOpen,setSearchBar]=useState(false);
         const showSearchBar = () => {
+
             setSearchBar(true);
     
         }
@@ -30,6 +31,7 @@ function Header(){
             setSearchBar(false);
         }
 return(
+    
     <div className="header">
     <div className="navbar">
         <div className="left">  
@@ -83,10 +85,10 @@ return(
             <button 
             onClick={showSearchBar}
             id="serch">
-                <BiSearch/>
                 search </button>
-                {searchBarOpen===true ?(<SearchBar searchBarOpen={searchBarOpen} closeSearchBar={closeSearchBar}/>):("")}
+            {searchBarOpen===true ?<SearchBar searchBarOpen={searchBarOpen} closeSearchBar={closeSearchBar}/>:("")}
             
+
             
             <button onClick={showModal}
             id="sign">회원가입/로그인</button>
