@@ -3,23 +3,29 @@ import '../css/Header.css';
 // import './sign_Modal'
 import { BiSearch } from 'react-icons/bi';
 import SignModal from './sign_Modal';
+import SearchBar from './SearchBar';
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
 
 function Header(){
         // 모달창 노출 여부 state
-        const[style,setStyle]=useState();
         const [modalOpen, setModalOpen] = useState(false);
         // 모달창 노출
         const showModal = () => {
             setModalOpen(true);
-            setStyle({
-                "background-color" : 'rgba(0,0,0,0.8)'
-            })
         }
 
         const closeModal=() => {
             setModalOpen(false);
+        }
+//serchBar 시작
+        
+        const[searchBarOpen,setSearchBar]=useState(false);
+        const showSearchBar = () => {
+            setSearchBar(true);
+        }
+        const closeSearchBar=() => {
+            setSearchBar(false);
         }
 return(
     <div className="header">
@@ -72,9 +78,12 @@ return(
 
 
         <div className="right">
-            <button id="serch">
+            <button onClick={showSearchBar}
+            id="serch">
                 <BiSearch/>
-            </button>
+                search </button>
+            {searchBarOpen===true?<SearchBar searchBarOpen={searchBarOpen} closeSearchBar={closeSearchBar}/>:null}
+            
             <button onClick={showModal}
             id="sign">회원가입/로그인</button>
             {modalOpen===true ?<SignModal modalOpen={modalOpen} closeModal={closeModal}/>:null}

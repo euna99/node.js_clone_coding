@@ -1,0 +1,16 @@
+.SearchBar_Background{
+    position:fixed;
+    top:0;
+    left: 0;
+    width:100vw;
+    height: 100vh;
+    background-color : rgba(0,0,0,0.2);
+}
+
+.SearchBar_Wrapper{
+    position:fixed;
+    text-align: center;
+    background-color: #fff;
+    top:10%;
+    left:10%;
+}

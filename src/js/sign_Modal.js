@@ -32,17 +32,11 @@ function SignModal({ modalOpen ,closeModal }) {
 
       const onClickConfirmButton = () => {
         if(email ===User.email) {
-          alert('로그인에 성공했습니다.')
+          alert('비밀번호를 입력하세요')
         } else {
           alert("등록되지 않은 회원입니다.");
         }
       }
-  
-    // const checkEmail = (e) => {
-    //     var regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i
-    //     // 형식에 맞는 경우 true 리턴
-    //     console.log('이메일 유효성 검사 :: ', regExp.test(e.target.value))
-    // }
 
 
     return (
