@@ -85,7 +85,7 @@ return(
             <button 
             onClick={showSearchBar}
             id="serch">
-                search </button>
+               <BiSearch/> </button>
             {searchBarOpen===true ?<SearchBar searchBarOpen={searchBarOpen} closeSearchBar={closeSearchBar}/>:("")}
             
 
