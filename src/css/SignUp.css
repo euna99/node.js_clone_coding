@@ -24,6 +24,10 @@
     border-bottom: 1px solid #ececce;
     color: #333;
     width:fit-content;
+    flex: 1 1 0%;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .signUp_close{
@@ -36,4 +40,11 @@
     flex: 1;
     justify-content: center;
     align-items: center;
+    width:230px;
+    margin : 40px auto;
+}
+
+.signUp_inputValue{
+    overflow: auto;
+    padding: 20px;
 }
