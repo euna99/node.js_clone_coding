@@ -6,6 +6,7 @@
     height: 72px;
     padding-top:40px;
     display: block;
+    /* position: fixed; */
 }
 
 .dev_article_none{
@@ -185,17 +186,19 @@
 
 
 .dev_wrap{
-    width:1080px;
-    margin:30px auto;
+    width:1060px;
+    justify-content: center;
+    margin: 50px auto;
 }
 
 .dev_wrap ul{
     display: flex;
     flex-wrap:wrap;
+    justify-content: space-between;
 }
 
 .dev_wrap li{
-    width:270px;
+    width:250px;
 
     height: 375px;
    

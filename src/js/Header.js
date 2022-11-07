@@ -19,7 +19,18 @@ function Header(){
         const closeModal=() => {
             setModalOpen(false);
         }
-        //2번째 모달      
+
+        //회원가입모달
+        const[signUpOpen,setSignup]=useState(false);
+
+        const showSignUp=()=>{
+          setSignup(true);
+        }
+
+        const closeSignUp=()=>{
+            setSignup(false);
+        }
+     
         
 //serchBar 시작
         
@@ -33,13 +44,7 @@ function Header(){
             setSearchBar(false);
         }
 //회원가입모달
-        const[signUpOpen,setSignup]=useState(false);
-        const showSignUp=()=>{
-          setSignup(true);
-        }
-        const closeSignUp=()=>{
-            setSignup(false);
-        }
+    
 return(
     
     <div className="header">

@@ -30,13 +30,14 @@ function SignModal({showSignUp ,closeModal}) {
         }
       };
 
-      // const onClickConfirmButton = () => {
-      //   if(email ===User.email) {
-      //     alert('비밀번호를 입력하세요')
-      //   } else {
-      //     alert("등록되지 않은 회원입니다.");
-      //   }
-      // }
+    //   const onClickConfirmButton = () => {
+    //     if(email ===User.email) {
+    //       alert('비밀번호를 입력하세요')
+    //       setModal(2);
+    //     } else {
+    //       alert("등록되지 않은 회원입니다.");
+    //     }
+    //   }
 
 
      
