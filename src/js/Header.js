@@ -21,15 +21,18 @@ function Header(){
         }
 
         //회원가입모달
-        const[signUpOpen,setSignup]=useState(false);
+        // const[signUpOpen,setSignup]=useState(false);
 
         const showSignUp=()=>{
-          setSignup(true);
+          setModalOpen(3);
         }
 
-        const closeSignUp=()=>{
-            setSignup(false);
-        }
+        {modalOpen===0 ""}
+        {modalOpen===1 ? <SignModal showModal={showModal} /> :""}
+        {modalOpen===2 ? <SignUp showSignUp={showSignUp} closeModal={closeModal}/> :""}
+        // const closeSignUp=()=>{
+        //     setSignup(false);
+        // }
      
 
         
@@ -107,7 +110,7 @@ return(
             <button onClick={showModal}
             id="sign">회원가입/로그인</button>
             {modalOpen===1?<SignModal modalOpen={modalOpen} closeModal={closeModal} showSignUp={showSignUp} />:null}
-            {signUpOpen===true?<SignUp closeSignUp={closeSignUp}/>: ""}
+            {/* {signUpOpen===true?<SignUp closeSignUp={closeSignUp}/>: ""} */}
 
             <button id="service">기업서비스</button>
         </div>
