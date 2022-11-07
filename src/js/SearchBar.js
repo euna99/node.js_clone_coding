@@ -11,6 +11,8 @@ function SearchBar({closeSearchBar}) {
      autocomplete="off"
      value=""
     ></input>
+    <button onClick={closeSearchBar}> 닫기 버튼
+    </button>
    <div>
     <span>추천 태그로 검색해보세요</span>
     <span>기업태그 홈 이동하기</span>
@@ -21,9 +23,6 @@ function SearchBar({closeSearchBar}) {
     <button></button>
    </div>
   </div>
-    <div onClick={closeSearchBar}>
-      
-    </div>
  </div>
 
  

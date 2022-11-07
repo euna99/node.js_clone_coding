@@ -75,3 +75,9 @@ function DevBookMark (){
 
 }
 export default DevBookMark;
+
+
+//button onClick=()={setNumber}
+//setNumber={props.setNumber} 
+//provider.useSelector,useDispatch
+ 
