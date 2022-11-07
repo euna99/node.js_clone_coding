@@ -8,8 +8,7 @@ function SearchBar({closeSearchBar}) {
     <input
      type="search"
      placeholder="#태그, 회사, 포지션 검색"
-     autocomplete="off"
-     value=""
+    //  autocomplete="off"
     ></input>
     <button onClick={closeSearchBar}> 닫기 버튼
     </button>
@@ -22,6 +21,10 @@ function SearchBar({closeSearchBar}) {
     <button></button>
     <button></button>
    </div>
+
+  </div>
+  <div onClick={closeSearchBar}
+  className="Search_close_Sec">
   </div>
  </div>
 
