@@ -10,14 +10,14 @@ import SignUp from './SignUp';
 
 function Header(){
         // 모달창 노출 여부 state
-        const [modalOpen, setModalOpen] = useState(false);
+        const [modalOpen, setModalOpen] = useState(0);
         // 모달창 노출
         const showModal = () => {
-            setModalOpen(true);
+            setModalOpen(1);
         }
 
         const closeModal=() => {
-            setModalOpen(false);
+            setModalOpen(0);
         }
 
         //회원가입모달
@@ -31,6 +31,7 @@ function Header(){
             setSignup(false);
         }
      
+
         
 //serchBar 시작
         
@@ -43,7 +44,6 @@ function Header(){
         const closeSearchBar=() => {
             setSearchBar(false);
         }
-//회원가입모달
     
 return(
     
@@ -106,7 +106,7 @@ return(
             
             <button onClick={showModal}
             id="sign">회원가입/로그인</button>
-            {modalOpen===true ?<SignModal modalOpen={modalOpen} closeModal={closeModal} showSignUp={showSignUp} />:null}
+            {modalOpen===1?<SignModal modalOpen={modalOpen} closeModal={closeModal} showSignUp={showSignUp} />:null}
             {signUpOpen===true?<SignUp closeSignUp={closeSignUp}/>: ""}
 
             <button id="service">기업서비스</button>
