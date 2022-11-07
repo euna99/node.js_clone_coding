@@ -16,9 +16,112 @@
     height: 250px;
 }
 
+.SearchBar_input_div{
+    width:1060px;
+    height: 50px;
+    margin : auto;
+    border-radius: 50px;
+    background-color:#f3f5f8;
+    border:none;
+    margin-bottom: 30px;
+    margin-top:20px;
+}
 
+.SearchBar_input{
+    width:950px;
+    height: 20px;
+    margin:auto;
+    background-color:inherit;
+    border:none;
+}
 .Search_close_Sec{
     top: 250px;
     height:70%;
     width: 100vw;
+}
+.SearchBar_middle{
+    width: 1060px;
+    margin: 10px auto;
+    justify-content: space-between;
+    display: flex;  
+    
+    
+}
+
+.SearchBar_Tag{
+    width: 1060px;
+    margin:0 auto;
+    display: flex;  
+}
+.Search_Tag_Btn1{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 0 26px;
+    background-color: #f3f5f8;
+    border-radius: 25px;
+}
+
+.Search_Tag_Btn2{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 0 26px;
+    background-color: #f3f5f8;
+    border-radius: 25px;
+}
+.Search_Tag_Btn3{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 0 26px;
+    background-color: #f3f5f8;
+    border-radius: 25px;
+}
+
+.Search_Tag_Btn4{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 0 26px;
+    background-color: #f3f5f8;
+    border-radius: 25px;
+}
+.Search_Tag_Btn5{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 0 26px;
+    background-color: #f3f5f8;
+    border-radius: 25px;
 }
