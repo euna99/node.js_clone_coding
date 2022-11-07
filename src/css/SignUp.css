@@ -1,0 +1,31 @@
+.signUp_background{
+    position:fixed;
+    top:0;
+    left: 0;
+    width:100vw;
+    height: 100vh;
+    background-color : rgba(0,0,0,0.2);
+}
+.signUp_wrapper{
+    top: 50%;
+    position:fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #fff;
+}
+
+.signUp_header{
+    height: 17px;
+    padding: 16px 20px;
+    display: flex;
+    border-bottom: 1px solid #ececce;
+    color: #333;
+    /* text-align: center; */
+    /* font-size: 16px;
+    font-weight: 600; */
+    /* word-wrap: break-word; */
+    width:fit-content;
+}
+
+

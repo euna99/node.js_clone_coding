@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import '../css/Sign.css';
+// import SignUp from './SignUp';
 
-function SignModal({ closeModal }) {
+function SignModal({showSignUp ,closeModal}) {
     // const[closebtn,setModalOpen]=useState(true);
     const User = {
         email: 'a653bc@naver.com'
@@ -29,14 +30,16 @@ function SignModal({ closeModal }) {
         }
       };
 
-      const onClickConfirmButton = () => {
-        if(email ===User.email) {
-          alert('비밀번호를 입력하세요')
-        } else {
-          alert("등록되지 않은 회원입니다.");
-        }
-      }
+      // const onClickConfirmButton = () => {
+      //   if(email ===User.email) {
+      //     alert('비밀번호를 입력하세요')
+      //   } else {
+      //     alert("등록되지 않은 회원입니다.");
+      //   }
+      // }
 
+
+     
 
     return (
     <div
@@ -66,8 +69,10 @@ function SignModal({ closeModal }) {
                 <div>올바른 이메일을 입력해주세요.</div>
                 )}
           </div>
-                <button onClick={onClickConfirmButton} disabled={notAllow} className = "login_btn" type="button">이메일로 계속하기</button>
+                <button onClick={showSignUp} disabled={notAllow} className = "login_btn" type="button">이메일로 계속하기</button>
+              
             </div> 
+
             <p className="sign_or">또는</p>
             <div className="sign_social">
                 <div className="sign_social_btn">

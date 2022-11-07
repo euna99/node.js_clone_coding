@@ -6,6 +6,7 @@ import SignModal from './sign_Modal';
 import SearchBar from './SearchBar';
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
+import SignUp from './SignUp';
 
 function Header(){
         // 모달창 노출 여부 state
@@ -18,7 +19,8 @@ function Header(){
         const closeModal=() => {
             setModalOpen(false);
         }
-
+        //2번째 모달      
+        
 //serchBar 시작
         
         const[searchBarOpen,setSearchBar]=useState(false);
@@ -29,6 +31,14 @@ function Header(){
         }
         const closeSearchBar=() => {
             setSearchBar(false);
+        }
+//회원가입모달
+        const[signUpOpen,setSignup]=useState(false);
+        const showSignUp=()=>{
+          setSignup(true);
+        }
+        const closeSignUp=()=>{
+            setSignup(false);
         }
 return(
     
@@ -88,11 +98,12 @@ return(
                <BiSearch/> </button>
             {searchBarOpen===true ?<SearchBar searchBarOpen={searchBarOpen} closeSearchBar={closeSearchBar}/>:("")}
             
-
             
             <button onClick={showModal}
             id="sign">회원가입/로그인</button>
-            {modalOpen===true ?<SignModal modalOpen={modalOpen} closeModal={closeModal}/>:null}
+            {modalOpen===true ?<SignModal modalOpen={modalOpen} closeModal={closeModal} showSignUp={showSignUp} />:null}
+            {signUpOpen===true?<SignUp closeSignUp={closeSignUp}/>: ""}
+
             <button id="service">기업서비스</button>
         </div>
     </div> 
