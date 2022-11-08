@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import '../css/Sign.css';
 // import SignUp from './SignUp';
 
-function SignModal({showSignUp ,closeModal}) {
+function SignModal({closeModal,modalOpen,showSignUp}) {
     // const[closebtn,setModalOpen]=useState(true);
     const User = {
         email: 'a653bc@naver.com'
@@ -71,7 +71,7 @@ function SignModal({showSignUp ,closeModal}) {
                 )}
           </div>
                 <button onClick={showSignUp} disabled={notAllow} className = "login_btn" type="button">이메일로 계속하기</button>
-              
+               
             </div> 
 
             <p className="sign_or">또는</p>

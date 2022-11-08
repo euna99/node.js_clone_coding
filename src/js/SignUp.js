@@ -1,11 +1,11 @@
 import '../css/SignUp.css';
 
-function SignUp ({closeSignUp}){
+function SignUp ({closeModal}){
     return(
 <div className="signUp_background">
     <div className = "signUp_wrapper">
         <div className="signUp_header">
-        <button onClick={closeSignUp} 
+        <button onClick={closeModal} 
         className="signUp_close"> 취소 </button>
         <span>회원가입</span>
         </div>
