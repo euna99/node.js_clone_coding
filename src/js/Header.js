@@ -110,7 +110,6 @@ return(
             
             <button onClick={showModal}
             id="sign">회원가입/로그인</button>
-            
             {modalOpen===2&&<SignModal showModal={showModal} closeModal={closeModal} showSignUp={showSignUp} />}
             {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp}/>} 
 
