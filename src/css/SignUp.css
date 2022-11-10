@@ -46,7 +46,13 @@
 .signUp_inputValue{
     padding: 20px;
     width: 360px;
-    height: 587.6px;
+    height: 500px;
+    overflow-y:scroll;
+    
+}
+
+.signUp_inputValue::-webkit-scrollbar {
+    display: none;
 }
 
 .signUp_input_tit{

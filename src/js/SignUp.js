@@ -2,6 +2,7 @@ import '../css/SignUp.css';
 
 function SignUp ({closeModal}){
     return(
+
 <div className="signUp_background">
     <div className = "signUp_wrapper">
         <div className="signUp_header">
@@ -195,13 +196,14 @@ function SignUp ({closeModal}){
                 <option value="ZW">Zimbabwe +263</option>
             </select>
             <div className="signUp_moblie">
-            <input type="text" placeholder="(예시) 01013245768" name="mobile" data-testid="Input_mobile" className="signUp_input" value="">
+            <input type="text" placeholder="(예시) 01013245768" name="mobile" className="signUp_input">
             </input>
-            <button type="button" data-testid="Button" disabled=""><span data-testid="Typography" color="var(--theme-palette-colors-black-100)">인증번호 받기</span>
+            <button type="button"  disabled="">
+                <span>인증번호 받기</span>
             </button>
             </div>
             <div className="css-l9nhxs">
-            <input type="text" placeholder="인증번호를 입력해주세요." name="authCode" data-testid="Input_authCode" readonly="" className="signUp_input" value=""/>
+            <input type="text" placeholder="인증번호를 입력해주세요." name="authCode"  readOnly="" className="signUp_input"/>
             </div>
 
             <div className="signUp_input_tit">비밀번호</div>
@@ -209,8 +211,26 @@ function SignUp ({closeModal}){
             placeholder='비밀번호를 입력해주세요'></input>
             <input className="signUp_input"
             placeholder='비밀번호를 다시 한번 입력해주세요'></input>
-            
-            <p data-testid="Typography" color="var(--theme-palette-colors-gray-600)" className="css-1d2ssup">영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상 16자 이하로 입력해주세요.</p>
+            <p data-testid="Typography" className="css-1d2ssup">영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상 16자 이하로 입력해주세요.</p>
+            <div class="agreement-container">
+            <div class="agreement-allcheck">
+                <input type="checkbox" id="allcheck" class="input-text"/>
+                <label for="allcheck">전체동의</label>
+            </div>
+
+            <div class="check-group">
+                <input type="checkbox" id="check_01" class="input-text"/>
+                <label for="check_01">선택 01</label>
+            </div>
+                <div class="check-group">
+                <input type="checkbox" id="check_02" class="input-text"/>
+                <label for="check_02">선택 02</label>
+            </div>
+                <div class="check-group">
+                <input type="checkbox" id="check_03" class="input-text"/>
+                <label for="check_03">선택 03</label>
+            </div>    
+        </div>
         </div>
     </div>
 </div>
