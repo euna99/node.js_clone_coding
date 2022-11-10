@@ -1,8 +1,60 @@
 import '../css/SignUp.css';
+import {useState,useEffect} from 'react';
 
 function SignUp ({closeModal}){
+    const [allCheck, setAllCheck] = useState(false);
+    const [ageCheck, setAgeCheck] = useState(false);
+    const [useCheck, setUseCheck] = useState(false);
+    const [marketingCheck, setMarketingCheck] = useState(false);
+  
+    const allBtnEvent =()=>{
+        
+      if(allCheck === false) {
+        setAllCheck(true);
+        setAgeCheck(true);
+        setUseCheck(true);
+        setMarketingCheck(true);
+      }else {
+        setAllCheck(false);
+        setAgeCheck(false);
+        setUseCheck(false);
+        setMarketingCheck(false);
+      } 
+    };
+    
+    const ageBtnEvent =()=>{
+      if(ageCheck === false) {
+        setAgeCheck(true)
+      }else {
+        setAgeCheck(false)
+      }
+    };
+    
+    const useBtnEvent =()=>{
+      if(useCheck === false) {
+        setUseCheck(true)
+      }else {
+        setUseCheck(false)
+      }
+    };
+    
+    const marketingBtnEvent =()=>{
+      if(marketingCheck === false) {
+        setMarketingCheck(true)
+      }else {
+        setMarketingCheck(false)
+      }
+    };
+  
+    useEffect(()=>{
+      if(ageCheck===true && useCheck===true && marketingCheck===true){
+        setAllCheck(true)
+      } else {
+        setAllCheck(false)
+      }
+    }, [ageCheck,useCheck, marketingCheck])
+  
     return(
-
 <div className="signUp_background">
     <div className = "signUp_wrapper">
         <div className="signUp_header">
@@ -212,22 +264,23 @@ function SignUp ({closeModal}){
             <input className="signUp_input"
             placeholder='비밀번호를 다시 한번 입력해주세요'></input>
             <p data-testid="Typography" className="singUpP">영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상 16자 이하로 입력해주세요.</p>
+           
             <div class="agreement_container">
             <div class="agreement_allcheck">
-                <input type="checkbox" id="allcheck" class="input-text"/>
+                <input type="checkbox" id="allcheck" checked={allBtnEvent} onChange={allBtnEvent}/>
                 <label for="allcheck">전체동의</label>
             </div>
             <hr/>
             <div class="check-group">
-                <input type="checkbox" id="check_01" class="input-text"/>
+                <input type="checkbox" id="check_01"checked={ageBtnEvent} onChange={ageBtnEvent}/>
                 <label for="check_01">만 14세 이상 입니다.(필수) </label>
             </div>
                 <div class="check-group">
-                <input type="checkbox" id="check_02" class="input-text"/>
+                <input type="checkbox" id="check_02" checked={useBtnEvent} onChange={useBtnEvent}/>
                 <label for="check_02">OneID 밎 원티드 이용약관 동의(필수)</label>
             </div>
                 <div class="check-group">
-                <input type="checkbox" id="check_03" class="input-text"/>
+                <input type="checkbox" id="check_03" checked={marketingCheck} onChange={marketingBtnEvent}/>
                 <label for="check_03">OneID 개인정보 수집 및 이용 동의(필수)</label>
             </div>    
         </div>
