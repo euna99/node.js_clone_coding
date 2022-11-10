@@ -267,16 +267,16 @@ function SignUp ({closeModal}){
            
             <div class="agreement_container">
             <div class="agreement_allcheck">
-                <input type="checkbox" id="allcheck" checked={allBtnEvent} onChange={allBtnEvent}/>
+                <input type="checkbox" id="allcheck" checked={allCheck} onChange={allBtnEvent}/>
                 <label for="allcheck">전체동의</label>
             </div>
             <hr/>
             <div class="check-group">
-                <input type="checkbox" id="check_01"checked={ageBtnEvent} onChange={ageBtnEvent}/>
+                <input type="checkbox" id="check_01"checked={ageCheck} onChange={ageBtnEvent}/>
                 <label for="check_01">만 14세 이상 입니다.(필수) </label>
             </div>
                 <div class="check-group">
-                <input type="checkbox" id="check_02" checked={useBtnEvent} onChange={useBtnEvent}/>
+                <input type="checkbox" id="check_02" checked={useCheck} onChange={useBtnEvent}/>
                 <label for="check_02">OneID 밎 원티드 이용약관 동의(필수)</label>
             </div>
                 <div class="check-group">
