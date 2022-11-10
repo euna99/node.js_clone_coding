@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import '../css/Sign.css';
 // import SignUp from './SignUp';
 
-function SignModal({closeModal,modalOpen,showSignUp}) {
+function SignModal({closeModal,showSignUp}) {
     // const[closebtn,setModalOpen]=useState(true);
     const User = {
         email: 'a653bc@naver.com'
