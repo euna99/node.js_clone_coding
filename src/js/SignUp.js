@@ -211,24 +211,24 @@ function SignUp ({closeModal}){
             placeholder='비밀번호를 입력해주세요'></input>
             <input className="signUp_input"
             placeholder='비밀번호를 다시 한번 입력해주세요'></input>
-            <p data-testid="Typography" className="css-1d2ssup">영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상 16자 이하로 입력해주세요.</p>
-            <div class="agreement-container">
-            <div class="agreement-allcheck">
+            <p data-testid="Typography" className="singUpP">영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상 16자 이하로 입력해주세요.</p>
+            <div class="agreement_container">
+            <div class="agreement_allcheck">
                 <input type="checkbox" id="allcheck" class="input-text"/>
                 <label for="allcheck">전체동의</label>
             </div>
-
+            <hr/>
             <div class="check-group">
                 <input type="checkbox" id="check_01" class="input-text"/>
-                <label for="check_01">선택 01</label>
+                <label for="check_01">만 14세 이상 입니다.(필수) </label>
             </div>
                 <div class="check-group">
                 <input type="checkbox" id="check_02" class="input-text"/>
-                <label for="check_02">선택 02</label>
+                <label for="check_02">OneID 밎 원티드 이용약관 동의(필수)</label>
             </div>
                 <div class="check-group">
                 <input type="checkbox" id="check_03" class="input-text"/>
-                <label for="check_03">선택 03</label>
+                <label for="check_03">OneID 개인정보 수집 및 이용 동의(필수)</label>
             </div>    
         </div>
         </div>
