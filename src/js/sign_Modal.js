@@ -28,7 +28,10 @@ function SignModal({closeModal,showSignUp}) {
         } else {
           setEmailValid(false);
         }
+
+
       };
+
 
     //   const onClickConfirmButton = () => {
     //     if(email ===User.email) {
