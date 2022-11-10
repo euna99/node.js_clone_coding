@@ -15,7 +15,6 @@ function Header(){
         const showModal = () => {
             setModalOpen(2);
         }
-
         const closeModal=() => {
             setModalOpen(1);
         }
@@ -23,7 +22,7 @@ function Header(){
         const showSignUp=()=>{
             setModalOpen(3);
         }
-
+        
         // //회원가입모달
         // const[signUpOpen,setSignup]=useState(false);
 
@@ -111,7 +110,6 @@ return(
             <button onClick={showModal}
             id="sign">회원가입/로그인</button>
 
-            {modalOpen===1?<SignModal closeModal={closeModal} showSignUp={showSignUp} />:null}
             {/* {signUpOpen===true?<SignUp closeSignUp={closeSignUp}/>: ""} */}
             {modalOpen===2&&<SignModal showModal={showModal} closeModal={closeModal} showSignUp={showSignUp} />}
             {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp}/>} 

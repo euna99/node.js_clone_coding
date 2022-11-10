@@ -265,23 +265,23 @@ function SignUp ({closeModal}){
             placeholder='비밀번호를 다시 한번 입력해주세요'></input>
             <p data-testid="Typography" className="singUpP">영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상 16자 이하로 입력해주세요.</p>
            
-            <div class="agreement_container">
-                <div class="agreement_allcheck">
+            <div className="agreement_container">
+                <div className="agreement_allcheck">
                     <input type="checkbox" id="allcheck" checked={allCheck} onChange={allBtnEvent}/>
-                    <label for="allcheck">전체동의</label>
+                    <label htmlFor="allcheck">전체동의</label>
                 </div>
                 <hr/>
-                <div class="check-group">
+                <div className="check-group">
                     <input type="checkbox" id="check_01"checked={ageCheck} onChange={ageBtnEvent}/>
-                    <label for="check_01">만 14세 이상 입니다.(필수) </label>
+                    <label htmlFor="check_01">만 14세 이상 입니다.(필수) </label>
                 </div>
-                    <div class="check-group">
+                    <div className="check-group">
                     <input type="checkbox" id="check_02" checked={useCheck} onChange={useBtnEvent}/>
-                    <label for="check_02">OneID 밎 원티드 이용약관 동의(필수)</label>
+                    <label htmlFor="check_02">OneID 밎 원티드 이용약관 동의(필수)</label>
                 </div>
-                    <div class="check-group">
+                    <div className="check-group">
                     <input type="checkbox" id="check_03" checked={marketingCheck} onChange={marketingBtnEvent}/>
-                    <label for="check_03">OneID 개인정보 수집 및 이용 동의(필수)</label>
+                    <label htmlFor="check_03">OneID 개인정보 수집 및 이용 동의(필수)</label>
                 </div>    
             </div>
         </div>
