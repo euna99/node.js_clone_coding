@@ -16,7 +16,7 @@
 }
 
 .signUp_header{
-    height: 76px;
+    height: 50px;
     width:398px;
     padding: 16px 20px;
     display: flex;
@@ -30,7 +30,7 @@
 
 .signUp_close{
     width:80px;
-    height: 76px;
+    height: 50px;
     background-color: white;
 }
 
