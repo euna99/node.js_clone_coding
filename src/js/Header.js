@@ -10,26 +10,27 @@ import SignUp from './SignUp';
 
 function Header(){
         // 모달창 노출 여부 state
-        const [modalOpen, setModalOpen] = useState(0);
+        const [modalOpen, setModalOpen] = useState(1);
         // 모달창 노출
         const showModal = () => {
-            setModalOpen(1);
+            setModalOpen(2);
         }
 
         const closeModal=() => {
-            setModalOpen(0);
+            setModalOpen(1);
+        }
+        
+        const showSignUp=()=>{
+            setModalOpen(3);
         }
 
-        //회원가입모달
+        // //회원가입모달
         // const[signUpOpen,setSignup]=useState(false);
 
-        const showSignUp=()=>{
-          setModalOpen(3);
-        }
+        // const showSignUp=()=>{
+        //   setSignup(true);
+        // }
 
-        {modalOpen===0 ""}
-        {modalOpen===1 ? <SignModal showModal={showModal} /> :""}
-        {modalOpen===2 ? <SignUp showSignUp={showSignUp} closeModal={closeModal}/> :""}
         // const closeSignUp=()=>{
         //     setSignup(false);
         // }
@@ -109,8 +110,13 @@ return(
             
             <button onClick={showModal}
             id="sign">회원가입/로그인</button>
+
             {modalOpen===1?<SignModal modalOpen={modalOpen} closeModal={closeModal} showSignUp={showSignUp} />:null}
             {/* {signUpOpen===true?<SignUp closeSignUp={closeSignUp}/>: ""} */}
+
+            {modalOpen===2&&<SignModal showModal={showModal} closeModal={closeModal} showSignUp={showSignUp} />}
+            {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp}/>} 
+
 
             <button id="service">기업서비스</button>
         </div>
