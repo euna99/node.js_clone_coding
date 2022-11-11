@@ -53,6 +53,9 @@ function SignUp ({closeModal}){
         setAllCheck(false)
       }
     }, [ageCheck,useCheck, marketingCheck])
+
+    //sessionStorage 사용 하기 
+
   
     return(
 <div className="signUp_background">

@@ -11,6 +11,7 @@ function SignModal({closeModal,showSignUp}) {
     const [email, setEmail] = useState('');
     const [emailValid, setEmailValid] = useState(false);
     const [notAllow, setNotAllow] = useState(true);
+
     useEffect(() => {
         if(emailValid===true ) {
           setNotAllow(false);
@@ -28,9 +29,12 @@ function SignModal({closeModal,showSignUp}) {
         } else {
           setEmailValid(false);
         }
-
-
       };
+      //sessionStorage사용하기 
+    // let [loginId, setLoginId] = useState("");
+    // let [savedLoginId, setSavedLoginId] = useState("");
+
+    // let sessionStorage = window.sessionStorage;
 
 
     //   const onClickConfirmButton = () => {
@@ -42,7 +46,7 @@ function SignModal({closeModal,showSignUp}) {
     //     }
     //   }
 
-
+// console.log(loginId);
      
 
     return (
@@ -67,7 +71,7 @@ function SignModal({closeModal,showSignUp}) {
             <div className="form">  
                 <span>이메일</span>
                 <input className = "login_email" type="text" name="id" placeholder="이메일" value={email}
-              onChange={handleEmail} />
+                onChange={handleEmail} />
                 <div className="errorMessageWrap">
                 {!emailValid && email.length > 0 && (
                 <div>올바른 이메일을 입력해주세요.</div>
