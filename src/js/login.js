@@ -8,13 +8,18 @@ function Login() {
     let [savedLoginId, setSavedLoginId] = useState("");
     let [savedLoginPassword, setSavedLoginPassword] = useState("");
 
-    let sessionStorage = window.sessionStorage;
+    // let sessionStorage = window.sessionStorage;
     // let sessionStorage = window.localStorage;
 
+
+    const Title=styled.div`
+    color:${props=>props.fontColor};
+    font-size: 20px;
+    `;
     return(
-        <>
+        <>  
+            <Title fontColor="yellow">스타일 컴포넌트 </Title>
             <div>
-                <Title>스타일 컴포넌트 </Title>
                 ID : <input type="text" size={20} onChange={ (e)=>{
                     setLoginId(e.target.value)
                 } } />
@@ -56,8 +61,6 @@ function Login() {
         </>
     )
 }
-const Title=styled.div`
-    color:red;
-    font-size: 20px;
-`;
+
+//조건부 스타일링에 용이함 
 export default Login;
