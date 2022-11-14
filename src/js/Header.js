@@ -1,6 +1,5 @@
 import '../css/reset.css';
 import '../css/Header.css';
-// import './sign_Modal'
 import { BiSearch } from 'react-icons/bi';
 import SignModal from './sign_Modal';
 import SearchBar from './SearchBar';
@@ -22,22 +21,8 @@ function Header(){
         const showSignUp=()=>{
             setModalOpen(3);
         }
-        
-        // //회원가입모달
-        // const[signUpOpen,setSignup]=useState(false);
 
-        // const showSignUp=()=>{
-        //   setSignup(true);
-        // }
-
-        // const closeSignUp=()=>{
-        //     setSignup(false);
-        // }
-     
-
-        
 //serchBar 시작
-        
         const[searchBarOpen,setSearchBar]=useState(false);
         const showSearchBar = () => {
 
@@ -47,6 +32,17 @@ function Header(){
         const closeSearchBar=() => {
             setSearchBar(false);
         }
+//localStorage
+// let [loginId, setLoginId] = useState("");
+// let [savedLoginId, setSavedLoginId] = useState("");
+
+// let sessionStorage = window.sessionStorage;
+
+// const loginDao=(e)=>{
+//     setLoginId(e.target.value)
+// }
+
+
     
 return(
     
@@ -112,7 +108,8 @@ return(
 
             {/* {signUpOpen===true?<SignUp closeSignUp={closeSignUp}/>: ""} */}
             {modalOpen===2&&<SignModal showModal={showModal} closeModal={closeModal} showSignUp={showSignUp} />}
-            {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp}/>} 
+            {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp}  />} 
+            
 
 
             <button id="service">기업서비스</button>

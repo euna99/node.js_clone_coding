@@ -1,7 +1,10 @@
+
 import "../css/reset.css";
 import "../css/SearchBar.css";
 
 function SearchBar({closeSearchBar}) {
+  // const [searchTerm, setSearchTerm] = useState("");
+  // console.log(setSearchTerm)
   return(
  <div className="SearchBar_Background">
   <div className="SearchBar_Wrapper">
@@ -9,6 +12,9 @@ function SearchBar({closeSearchBar}) {
     <input className="SearchBar_input"
      type="search"
      placeholder="#태그, 회사, 포지션 검색"
+    //  onChange={(e) => {
+    //   setSearchTerm(e.target.value);
+    // }}
     //  autocomplete="off"
     ></input>
     </div>
@@ -25,7 +31,6 @@ function SearchBar({closeSearchBar}) {
     <button className="Search_Tag_Btn4">#퇴사율 5% 미만</button>
     <button className="Search_Tag_Btn5">#퇴사율 5% 미만</button>
    </div>
-
   </div>
   <div onClick={closeSearchBar}
   className="Search_close_Sec">
