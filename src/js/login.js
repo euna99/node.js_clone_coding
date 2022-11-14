@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styled from 'style-component';
 
 function Login() {
 
@@ -13,6 +14,7 @@ function Login() {
     return(
         <>
             <div>
+                <Title>스타일 컴포넌트 </Title>
                 ID : <input type="text" size={20} onChange={ (e)=>{
                     setLoginId(e.target.value)
                 } } />
@@ -54,5 +56,8 @@ function Login() {
         </>
     )
 }
-
+const Title=styled.div`
+    color:red;
+    font-size: 20px;
+`;
 export default Login;

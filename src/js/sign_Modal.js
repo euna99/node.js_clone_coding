@@ -30,7 +30,7 @@ function SignModal({closeModal,showSignUp}) {
           setEmailValid(false);
         }
       };
-      //sessionStorage사용하기 
+//sessionStorage사용하기 
     // let [loginId, setLoginId] = useState("");
     // let [savedLoginId, setSavedLoginId] = useState("");
 
