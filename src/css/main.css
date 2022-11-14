@@ -1,17 +1,17 @@
 .div_whole{
-    padding-top: 25px;
+    padding-top: 1.5625rem;
 }
 
 .img_wrap{
-    height:304px;
+    height:19rem;
     width:100vw;
     position: relative;
     overflow: hidden;
 }
 /* section이름 ul이름 li이름 */
 .imgbar{
-    height:300px;
-    width:1060px;
+    height:18.75rem;
+    width:66.25rem;
     display:flex;
     /* overflow: hidden; */
     /* margin:0 auto; */
@@ -19,49 +19,49 @@
     left:-56%;
 }  
 .imgbar li{
-    margin: 0px 10px;
+    margin: 0rem .625rem;
 }
 
 /* section 시작 */
 /* 
 .sec_first{ 
-    border-bottom:1px solid #444444;
+    border-bottom:.0625rem solid #444444;
     width: 100vw;
-    height: 1064px;
-    padding: 60px 0;
+    height: 66.5rem;
+    padding: 3.75rem 0;
 } */
 
 
 .title_first{
-    width: 1060px;
-    height: 30.2px;
+    width: 66.25rem;
+    height: 1.8875rem;
     margin: 0 auto;
     display: flex;
 }
 
 .title_first h2{
-    height: 30px;
+    height: 1.875rem;
     width:fit-content;
     text-align: center;
     font-weight: 700;
     white-space: nowrap;
-    font-size:22px;
+    font-size:1.375rem;
     margin:0 auto;
 }
 
 .title_first button{
-    width:18px;
-    height: 19px;
-    border-radius: 50px;
-    border: 0.3px solid black;
+    width:1.125rem;
+    height: 1.1875rem;
+    border-radius: 3.125rem;
+    border: .0187rem solid black;
 }
 
 .bar{
-    width:1060px;
-    height: 40px;
-    padding:0 0 0.5px;
+    width:66.25rem;
+    height: 2.5rem;
+    padding:0 0 .0313rem;
     text-align: center;
-    margin: 30px auto;
+    margin: 1.875rem auto;
     flex-direction: row;
     align-items: center;
     white-space: nowrap;
@@ -70,91 +70,91 @@
 }
 
 .bar button{
-    margin:0px 4px;
-    padding: 9px 22px;
-    border: 1px solid #e1e2e3;
+    margin:0rem .25rem;
+    padding: .5625rem 1.375rem;
+    border: .0625rem solid #e1e2e3;
     background-color: white;
     float: left;
 }
 .btnb{
-    font-size: 15px;
-    border-radius: 50px;
-    height: 40px;
+    font-size: .9375rem;
+    border-radius: 3.125rem;
+    height: 2.5rem;
 }
 
 #btna{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #e1e2e3;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: .0625rem solid #e1e2e3;
     border-radius : 50%;
 }
 #btnd{
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     justify-content: center;
     align-items: center;
-    border: 1px solid #e1e2e3;
+    border: .0625rem solid #e1e2e3;
 }
 
 .wrapper_first {
-    width:1060px;
-    height:740px;
+    width:66.25rem;
+    height:46.25rem;
     margin: auto;
 }
 
 .site{
-    width: 1080px;
+    width: 67.5rem;
     display: flex;
     flex-wrap: wrap; 
     /* list-style: none; */
 }
 
 .site li{
-    width:250px;
-    height: 308px;
-    margin:0px 10px;
+    width:15.625rem;
+    height: 19.25rem;
+    margin:0rem .625rem;
 } 
 
 .tit_p{
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #333;
-    margin: 17px 0 8px;
+    margin: 1.0625rem 0 .5rem;
 }
 
 
 .infor_p{
-    height: 42px;
+    height: 2.625rem;
     overflow: hidden;
     font-weight: 600;
-    font-size: 13px;
-    line-height: 21px;
+    font-size: .8125rem;
+    line-height: 1.3125rem;
     color: #aaa;
 }
 
 .site img {
-    width: 250px;
-    height: 175px;
+    width: 15.625rem;
+    height: 10.9375rem;
     object-fit: cover;
 }
 
 .more{
-    width:1060px;
-    height: 50px;
+    width:66.25rem;
+    height: 3.125rem;
     text-align: center;
 }
 
 .more_btn{
-    width:345px;
-    height: 50px;
-    padding: 0 27px;
-    font-size:16px;
+    width:21.5625rem;
+    height: 3.125rem;
+    padding: 0 1.6875rem;
+    font-size:1rem;
     font-weight: 700;
     display: inline-block;
     background-color: inherit;
-    border:1px solid #e1e2e3;
-    border-radius: 50px;
+    border:.0625rem solid #e1e2e3;
+    border-radius: 3.125rem;
 }
 
 
@@ -162,32 +162,32 @@
 
 /* .sec_second{
     width:100vw;
-    height: 400px;
-    padding: 60px 0px;
-    border-bottom:1px solid #444444;
+    height: 25rem;
+    padding: 3.75rem 0rem;
+    border-bottom:.0625rem solid #444444;
 } */
 
 
 .title_second{
-    width: 1060px;
-    height: 50px;
+    width: 66.25rem;
+    height: 3.125rem;
     margin:0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     text-align: center;
 }
 
 .title_second h2{
-    height: 50px; 
+    height: 3.125rem; 
     font-weight: 700;
-    font-size:22px;
+    font-size:1.375rem;
     margin:0 auto;
 }
 
 .title_second a{
-    width:108px;
-    height: 18px;
-    margin: 5px;
-    font-size: 13px;
+    width:6.75rem;
+    height: 1.125rem;
+    margin: .3125rem;
+    font-size: .8125rem;
     font-weight: 500;
     line-height: normal;
     vertical-align: middle;
@@ -198,51 +198,51 @@
 
 
 .wrapper_second{
-    width:1080px;
-    height: 290.14px;
+    width:67.5rem;
+    height: 18.1337rem;
     margin:0 auto;
 }
 
 .article{
-    width: 1080px;
+    width: 67.5rem;
     display: flex;
     /* list-style: none; */
 }
 
 .article li{
-    width:270px;
-    height:290px;
-    padding: 10px;
+    width:16.875rem;
+    height:18.125rem;
+    padding: .625rem;
 } 
 
 .article img{
-    width: 250px;
-    height: 175px;
+    width: 15.625rem;
+    height: 10.9375rem;
 }
 .sec_article_Tag{
-    width: 250px;
-    font-size:11px;
+    width: 15.625rem;
+    font-size:.6875rem;
     font-weight: 600;
 }
 
 /* .article_div{
-    width: 250px;
-    height: 78px;
+    width: 15.625rem;
+    height: 4.875rem;
 }
 
 .article_tit{
-    width: 250px;
-    height: 48px;
-    margin:17px 0px 0px;
-    font-size: 16px;
+    width: 15.625rem;
+    height: 3rem;
+    margin:1.0625rem 0rem 0rem;
+    font-size: 1rem;
     font-weight: 700;
-    line-height: 1.5rem;
+    line-height: 24px;
 
 }
 .article{
-    width: 250px;
-    height: 17.14px;
-    margin:13px 0px 0px;
+    width: 15.625rem;
+    height: 1.0713rem;
+    margin:.8125rem 0rem 0rem;
 } */
 
 /* sec_2번 3번 한번에 끝 */
@@ -252,51 +252,51 @@
     text-align: center;
     vertical-align: midlle;
     background-image: linear-gradient(102deg,#2f5fef -127%,#046afe 50%,#00d2dd 145%);
-    width:1060px;
-    height: 64px;
+    width:66.25rem;
+    height: 4rem;
     margin:0 auto;
-    border-radius: 50px;
+    border-radius: 3.125rem;
 } 
 
 .cont_span{
-    width:377px;
-    height: 224px;
-    margin:0px auto;
+    width:23.5625rem;
+    height: 14rem;
+    margin:0rem auto;
     color:white;
-    font-size: 17px;
-    font-weight: 700px;
-    padding:21px 30px;
+    font-size: 1.0625rem;
+    font-weight: 43.75rem;
+    padding:1.3125rem 1.875rem;
 }
 
 
 
 .wrapper_four{
-    width:1060px;
+    width:66.25rem;
     margin:0 auto;
     display:flex;
 }
 
 .event{
-    width: 1080px;
+    width: 67.5rem;
     display: flex;
 }
 .event_li{
-    width:538px;
-    height: 356px;
-    padding:10px;
+    width:33.625rem;
+    height: 22.25rem;
+    padding:.625rem;
     /* display:flex; */
 }
 
 .event_img{
-    width:522px;
-    height: 273px;;
+    width:32.625rem;
+    height: 17.0625rem;;
 
 }
 
 .event_div{
-    width:522px;
-    height: 22px;
-    margin: 12px 0 0;
+    width:32.625rem;
+    height: 1.375rem;
+    margin: .75rem 0 0;
     display:flex;
     text-align: center;
 }
@@ -304,8 +304,8 @@
 /* 구독해야하는 이유 */
 .reason_sec{
     background-color:#f7f7f7;
-    height: 158px;
-    padding: 60px 0;
+    height: 9.875rem;
+    padding: 3.75rem 0;
 }
 
 .reason{
@@ -313,38 +313,38 @@
     display:grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
-    width:1060px;
+    width:66.25rem;
 }
 
 .reason_gr1{
-    width:515px;
+    width:32.1875rem;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    padding:50px auto;
+    padding:3.125rem auto;
     margin: 0 20%;
 }
 
 .reason_gr1 img{
-    width: 150px;
-    height:30px;
+    width: 9.375rem;
+    height:1.875rem;
     object-fit: fill;
 }
 
 .reason_gr1 p{
-    font-size: 9px;
+    font-size: .5625rem;
 }
 .reason_gr1 span{
-    font-size: 30px;
+    font-size: 1.875rem;
     width:fit-content
 }
 
 #reason_btn{
-    border-radius: 50px;
-    width:260px;
-    height: 50px;
+    border-radius: 3.125rem;
+    width:16.25rem;
+    height: 3.125rem;
     border:none;
-    margin-top: 25px;
-    font-size: 16px;
+    margin-top: 1.5625rem;
+    font-size: 1rem;
     color: #fff;
     background-color: #36f;
 }
@@ -355,55 +355,55 @@
 }
 
 .reason_2 img{
-    width: 500px;
-    height: 150px;
+    width: 31.25rem;
+    height: 9.375rem;
     margin:auto;
 }
 
 .hire{
-    padding:60px 0px 80px 0px;
+    padding:3.75rem 0rem 5rem 0rem;
 }
 
 .hire_1{
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 1.33;
     font-weight: 700;
     color: #333;
-    margin: 0 0 30px;
+    margin: 0 0 1.875rem;
     text-align: center;
 }
 .hire_container{
     margin:0 auto;
-    width:1060px;
-    height:120px;
+    width:66.25rem;
+    height:7.5rem;
     display:flex;
 }
 
 
 .hire_2{
-    border: 0.7px solid #e1e2e3;
-    width:250px;
-    height: 100px;
+    border: .0437rem solid #e1e2e3;
+    width:15.625rem;
+    height: 6.25rem;
     text-align: center;
-    padding-top: 18px;
+    padding-top: 1.125rem;
     
 }
 
 .hire_3{
-    width:250px;
-    height: 32px;
+    width:15.625rem;
+    height: 2rem;
     text-align: center;    
 }
 
 .SvgIcon{
-    width:32px;
-    height: 32px;
+    width:2rem;
+    height: 2rem;
 }
 
 .hire_4{
-    width:250px;
+    width:15.625rem;
     text-align: center;
-    font-size: 16px;   
-    padding-top: 20px;
+    font-size: 1rem;   
+    padding-top: 1.25rem;
 }
 

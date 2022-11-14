@@ -1,8 +1,8 @@
 .header{
     width:100vw;
-    height:50px;
+    height:3.125rem;
     display:flex;
-    border-bottom: 0.5px solid #e1e2e3;
+    border-bottom: .0313rem solid #e1e2e3;
     position:fixed;
     background-color: white;
     z-index: 90000;
@@ -12,8 +12,8 @@
     align-items: center;
     justify-content: space-between;
     display: flex;
-    width:1060px;
-    height: 50px;
+    width:66.25rem;
+    height: 3.125rem;
     margin:auto;
 }
 
@@ -21,27 +21,27 @@
 .left{
     /* font-weight: bold; */
     display:flex;
-    width:106.8px;
-    height:20.8px;
+    width:6.675rem;
+    height:1.3rem;
 }
 
 .Wanted_logo_left{
-    width:74px;
-    height:19.8px;
+    width:4.625rem;
+    height:1.2375rem;
     object-fit: fill;
 }
 #hamberger{
-    width:17px;
-    height: 20.8px;
+    width:1.0625rem;
+    height: 1.3rem;
     text-align: center;
-    padding: 0px;
+    padding: 0rem;
     background-color: inherit;
-    margin:0px 15px 0px 0px;
+    margin:0rem .9375rem 0rem 0rem;
 }
 /* margin: (위 오른쪽 아래 왼쪽 ) */
 .hamberger_img{
-    width:17px;
-    height:20px;
+    width:1.0625rem;
+    height:1.25rem;
     object-fit:contain;
 }
 
@@ -51,20 +51,20 @@
     z-index: 1;
     position: absolute;
     background-color: white;
-    /* margin-top: 30px; */
+    /* margin-top: 1.875rem; */
 }
 
 #hamber_hover ul{
     /* display: block; */
-    padding: 5px 100px 5px 10px;
-    font-size: 13px;
+    padding: .3125rem 6.25rem .3125rem .625rem;
+    font-size: .8125rem;
     line-height: 2.86;
     list-style: none;
     overflow-y: scroll;
 }
 
 .left_hover{
-    height:50px;
+    height:3.125rem;
 }
 
 .left_hover:hover #hamber_hover
@@ -88,7 +88,7 @@
 }
 
 .center a{
-    padding:15px;
+    padding:.9375rem;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -99,36 +99,36 @@
 
 .right{
     display:flex;
-    width: 271px;
-    padding:10px 0px;
+    width: 16.9375rem;
+    padding:.625rem 0rem;
 }
 
 #serch{
-    width:30px;
-    height:20px;
-    margin:5px 0 0;
-    padding : 0 10px;
+    width:1.875rem;
+    height:1.25rem;
+    margin:.3125rem 0 0;
+    padding : 0 .625rem;
     background-color: inherit;
 }
 
 
 #sign{
-    width: 110px;
-    margin: 0px 6px 0px 15px;
-    padding:0 10px;
+    width: 6.875rem;
+    margin: 0rem .375rem 0rem .9375rem;
+    padding:0 .625rem;
     background-color: white;
-    height: 20px;
+    height: 1.25rem;
     white-space: nowrap;
 }
 
 
 
 #service{
-    margin-left:20px; 
-    border:0.5px solid #e1e2e3;
+    margin-left:1.25rem; 
+    border:.0313rem solid #e1e2e3;
     background-color: white;
-    border-radius: 20px;
-    margin: 0px 6px 0px 6px;
-    height: 20px;
-    padding:0 10px;
+    border-radius: 1.25rem;
+    margin: 0rem .375rem 0rem .375rem;
+    height: 1.25rem;
+    padding:0 .625rem;
 }
