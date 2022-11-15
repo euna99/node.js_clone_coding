@@ -69,7 +69,7 @@ function SignUp ({closeModal}){
     
             <div className="signUp_input_tit"> 이메일</div>
             <input className="signUp_input"
-            placeholder='email'></input>
+            placeholder="email"></input>
     
             <div className="signUp_input_tit"> 이름</div>
             <input className="signUp_input"
@@ -267,7 +267,6 @@ function SignUp ({closeModal}){
             <input className="signUp_input"
             placeholder='비밀번호를 다시 한번 입력해주세요'></input>
             <p data-testid="Typography" className="singUpP">영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상 16자 이하로 입력해주세요.</p>
-           
             <div className="agreement_container">
                 <div className="agreement_allcheck">
                     <input type="checkbox" id="allcheck" checked={allCheck} onChange={allBtnEvent}/>

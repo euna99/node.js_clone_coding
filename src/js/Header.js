@@ -18,8 +18,10 @@ function Header(){
             setModalOpen(1);
         }
         
-        const showSignUp=()=>{
+        const showSignUp=(email)=>{
             setModalOpen(3);
+            sessionStorage.setItem("loginId", email);
+            setSavedLoginId(sessionStorage.getItem("loginId"));
         }
 
 //serchBar 시작
@@ -39,17 +41,8 @@ let [savedLoginId, setSavedLoginId] = useState("");
 
 let sessionStorage = window.sessionStorage;
 
-const IdGet=(e)=>{
-    setLoginId(e.target.value)
-}
 
-const IdStore=()=>{
-    sessionStorage.setItem("loginId", loginId);
 
-    setSavedLoginId(sessionStorage.getItem("loginId"));
-}
-
-    
 return(
     
     <div className="header">
@@ -111,9 +104,8 @@ return(
             
             <button onClick={showModal}
             id="sign">회원가입/로그인</button>
-
             {/* {signUpOpen===true?<SignUp closeSignUp={closeSignUp}/>: ""} */}
-            {modalOpen===2&&<SignModal showModal={showModal} closeModal={closeModal} showSignUp={showSignUp} IdGet={IdGet} savedLoginId={savedLoginId}/>}
+            {modalOpen===2&&<SignModal showModal={showModal} closeModal={closeModal} showSignUp={showSignUp} setLoginId={setLoginId} loginId={loginId}  />}
             {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp}  />} 
             
 

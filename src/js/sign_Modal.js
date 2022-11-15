@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import '../css/Sign.css';
 // import SignUp from './SignUp';
 
-function SignModal({closeModal,showSignUp,IdGet,IdStore}) {
+function SignModal({closeModal,showSignUp}) {
     // const[closebtn,setModalOpen]=useState(true);
     const User = {
         email: 'a653bc@naver.com'
@@ -31,17 +31,6 @@ function SignModal({closeModal,showSignUp,IdGet,IdStore}) {
         }
       };
 
-    //   const onClickConfirmButton = () => {
-    //     if(email ===User.email) {
-    //       alert('비밀번호를 입력하세요')
-    //       setModal(2);
-    //     } else {
-    //       alert("등록되지 않은 회원입니다.");
-    //     }
-    //   }
-
-// console.log(loginId);
-     
 
     return (
     <div
@@ -65,18 +54,16 @@ function SignModal({closeModal,showSignUp,IdGet,IdStore}) {
             <div className="form">  
                 <span>이메일</span>
                 <input className = "login_email" type="text" name="id" placeholder="이메일" value={email}
-                onChange={()=>
-                { handleEmail()
-                    IdGet()
-                }}/>
+                onChange={handleEmail}
+                />
                 <div className="errorMessageWrap">
                 {!emailValid && email.length > 0 && (
                 <div>올바른 이메일을 입력해주세요.</div>
                 )}
           </div>
-                <button onClick={()=>{showSignUp(); IdStore()}}
-                disabled={notAllow}
-                 className = "login_btn" type="button">이메일로 계속하기</button>
+            <button onClick={()=>{showSignUp(email)}}
+            disabled={notAllow}
+            className = "login_btn" type="button">이메일로 계속하기</button>
                
             </div> 
 
