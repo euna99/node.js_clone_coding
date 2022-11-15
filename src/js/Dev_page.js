@@ -26,6 +26,7 @@ useEffect(() => {
     window.removeEventListener("scroll", handleScroll);
   }; //  window 에서 스크롤을 감시를 종료
 });
+
  return (
   <div>
     <DevTitle  DevStatus={DevStatus}/>

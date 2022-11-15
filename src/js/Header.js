@@ -32,17 +32,20 @@ function Header(){
         const closeSearchBar=() => {
             setSearchBar(false);
         }
-//localStorage
-// let [loginId, setLoginId] = useState("");
-// let [savedLoginId, setSavedLoginId] = useState("");
+      
+// localStorage
+    let [loginId, setLoginId] = useState("");
+    let [savedLoginId, setSavedLoginId] = useState("");
 
-// let sessionStorage = window.sessionStorage;
+    let sessionStorage = window.sessionStorage;
 
-// const loginDao=(e)=>{
-//     setLoginId(e.target.value)
-// }
-
-
+    const loginDao=(e)=>{
+        setLoginId(e.target.value)
+    }
+    const IdStorge=()=>{
+        sessionStorage.setItem("loginId", loginId);
+        setSavedLoginId(sessionStorage.getItem("loginId"));
+    }
     
 return(
     

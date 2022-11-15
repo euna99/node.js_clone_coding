@@ -69,6 +69,7 @@
     background-color: white;
     position:fixed;
     padding-bottom: 0;
+    z-index: 20;
 }
 
 
@@ -126,6 +127,7 @@
 .Dev_Tag_border{
     border-bottom: 0.75px solid #e1e2e3;
 }
+
 .fixedBox_border{
     border-bottom: 0.5px solid blue;
 }
@@ -159,8 +161,6 @@
 }
 
 .bookmark{
-    /* width:1060px;
-    margin:0 auto; */
     display: flex;
     color: #36f;
     font-size: 15px;
@@ -199,15 +199,19 @@
 
 .dev_wrap li{
     width:250px;
-
     height: 375px;
-   
 }
 .dev_wrap_top{
     width: 250px;
     height: 187px;
     /* display: inline-block;
     vertical-align: top; */
+}
+.wrap_bookMark{
+    z-index:10;
+    position:absolute;
+    width: 23px;
+    height: 23px;
 }
 .dev_wrap_bottom h3{
     color: #333;
@@ -224,4 +228,13 @@
 .dev_wrap_img{
     width: 250px;
     height: 187px;
+    position : relative;
+}
+
+.wrap_bookMark{
+    z-index:10;
+    position:absolute;
+    width: 23px;
+    height: 23px;
+    color:#fff;
 }
