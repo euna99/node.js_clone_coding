@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import '../css/Sign.css';
 // import SignUp from './SignUp';
 
-function SignModal({closeModal,showSignUp,loginDao,IdStorge}) {
+function SignModal({closeModal,showSignUp,IdGet,IdStore}) {
     // const[closebtn,setModalOpen]=useState(true);
     const User = {
         email: 'a653bc@naver.com'
@@ -65,16 +65,18 @@ function SignModal({closeModal,showSignUp,loginDao,IdStorge}) {
             <div className="form">  
                 <span>이메일</span>
                 <input className = "login_email" type="text" name="id" placeholder="이메일" value={email}
-                onChange=
-                    {handleEmail}
-                />
+                onChange={()=>
+                { handleEmail()
+                    IdGet()
+                }}/>
                 <div className="errorMessageWrap">
                 {!emailValid && email.length > 0 && (
                 <div>올바른 이메일을 입력해주세요.</div>
                 )}
           </div>
-                <button onClick={showSignUp}
-                disabled={notAllow} className = "login_btn" type="button">이메일로 계속하기</button>
+                <button onClick={()=>{showSignUp(); IdStore()}}
+                disabled={notAllow}
+                 className = "login_btn" type="button">이메일로 계속하기</button>
                
             </div> 
 

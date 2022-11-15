@@ -32,20 +32,23 @@ function Header(){
         const closeSearchBar=() => {
             setSearchBar(false);
         }
-      
 // localStorage
-    let [loginId, setLoginId] = useState("");
-    let [savedLoginId, setSavedLoginId] = useState("");
 
-    let sessionStorage = window.sessionStorage;
+let [loginId, setLoginId] = useState("");
+let [savedLoginId, setSavedLoginId] = useState("");
 
-    const loginDao=(e)=>{
-        setLoginId(e.target.value)
-    }
-    const IdStorge=()=>{
-        sessionStorage.setItem("loginId", loginId);
-        setSavedLoginId(sessionStorage.getItem("loginId"));
-    }
+let sessionStorage = window.sessionStorage;
+
+const IdGet=(e)=>{
+    setLoginId(e.target.value)
+}
+
+const IdStore=()=>{
+    sessionStorage.setItem("loginId", loginId);
+
+    setSavedLoginId(sessionStorage.getItem("loginId"));
+}
+
     
 return(
     
@@ -102,7 +105,7 @@ return(
             <button 
             onClick={showSearchBar}
             id="serch">
-               <BiSearch/> </button>
+            <BiSearch/> </button>
             {searchBarOpen===true ?<SearchBar searchBarOpen={searchBarOpen} closeSearchBar={closeSearchBar}/>:("")}
             
             
@@ -110,7 +113,7 @@ return(
             id="sign">회원가입/로그인</button>
 
             {/* {signUpOpen===true?<SignUp closeSignUp={closeSignUp}/>: ""} */}
-            {modalOpen===2&&<SignModal showModal={showModal} closeModal={closeModal} showSignUp={showSignUp} />}
+            {modalOpen===2&&<SignModal showModal={showModal} closeModal={closeModal} showSignUp={showSignUp} IdGet={IdGet} savedLoginId={savedLoginId}/>}
             {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp}  />} 
             
 
