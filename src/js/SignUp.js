@@ -1,7 +1,7 @@
 import '../css/SignUp.css';
 import {useState,useEffect} from 'react';
 
-function SignUp ({closeModal}){
+function SignUp ({closeModal,email}){
     const [allCheck, setAllCheck] = useState(false);
     const [ageCheck, setAgeCheck] = useState(false);
     const [useCheck, setUseCheck] = useState(false);
@@ -69,7 +69,9 @@ function SignUp ({closeModal}){
     
             <div className="signUp_input_tit"> 이메일</div>
             <input className="signUp_input"
-            placeholder="email"></input>
+            value={email}
+            // placeholder={loginId}
+            ></input>
     
             <div className="signUp_input_tit"> 이름</div>
             <input className="signUp_input"
