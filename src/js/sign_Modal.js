@@ -30,8 +30,7 @@ function SignModal({closeModal,showSignUp}) {
           setEmailValid(false);
         }
       };
-
-
+      console.log({email})
     return (
     <div
     className="login_background">
@@ -51,21 +50,20 @@ function SignModal({closeModal,showSignUp}) {
                 </h2>
             </div>
             
-            <div className="form">  
-                <span>이메일</span>
-                <input className = "login_email" type="text" name="id" placeholder="이메일" value={email}
-                onChange={handleEmail}
-                />
-                <div className="errorMessageWrap">
-                {!emailValid && email.length > 0 && (
-                <div>올바른 이메일을 입력해주세요.</div>
-                )}
-          </div>
-            <button onClick={()=>{showSignUp(email)}}
-            disabled={notAllow}
-            className = "login_btn" type="button">이메일로 계속하기</button>
-               
-            </div> 
+        <div className="form">  
+            <span>이메일</span>
+            <input className = "login_email" type="text" name="id" placeholder="이메일" value={email}
+            onChange={handleEmail}
+            />
+            <div className="errorMessageWrap">
+            {!emailValid && email.length > 0 && (
+            <div>올바른 이메일을 입력해주세요.</div>
+            )}
+        </div>
+        <button onClick={()=>{showSignUp(email)}}
+        disabled={notAllow}
+        className = "login_btn" type="button">이메일로 계속하기</button>
+        </div> 
 
             <p className="sign_or">또는</p>
             <div className="sign_social">

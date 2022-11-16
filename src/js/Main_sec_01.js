@@ -32,53 +32,53 @@ function Main_Sec_01(){
                 </h2>
             </div>
             <div className="bar">
-                    <button className="btnb">
-                        <span>IT기술</span>
-                    </button>
-                    <button className="btnb">
-                        <span>인간관계</span>
-                    </button>
-                    <button className="btnb">
-                        <span>커리어고민</span>
-                    </button>
-                    <button className="btnb">
-                        <span>라이프스타일</span>
-                    </button>
-                    <button className="btnb">
-                        <span>AI</span>
-                    </button>
-                    <button className="btnb">
-                        <span>IT기술</span>
-                    </button>
-                    <button className="btnb">
-                        <span>IT기술</span>
-                    </button>
-                    <button className="btnb">
-                        <span>IT기술</span>
-                    </button>
-                    <button className="btnb">
-                        <span>IT기술</span>
-                    </button>
-                    <button className="btnb">
-                        <span>IT기술</span>
-                    </button>
-                    <button className="btnb">
-                        <span>IT기술</span>
-                    </button>
-                    <button className="btnb">
-                        <span>IT기술</span>
-                    </button>
-                    <button className="btnb">
-                        <span>IT기술</span>
-                    </button>
-                    <button id="btna">
-                        <span> > </span>
-                    </button>
-                    <button id="btnd">
-                        <span>...</span>
-                    </button>
+                <button className="btnb">
+                    <span>IT기술</span>
+                </button>
+                <button className="btnb">
+                    <span>인간관계</span>
+                </button>
+                <button className="btnb">
+                    <span>커리어고민</span>
+                </button>
+                <button className="btnb">
+                    <span>라이프스타일</span>
+                </button>
+                <button className="btnb">
+                    <span>AI</span>
+                </button>
+                <button className="btnb">
+                    <span>IT기술</span>
+                </button>
+                <button className="btnb">
+                    <span>IT기술</span>
+                </button>
+                <button className="btnb">
+                    <span>IT기술</span>
+                </button>
+                <button className="btnb">
+                    <span>IT기술</span>
+                </button>
+                <button className="btnb">
+                    <span>IT기술</span>
+                </button>
+                <button className="btnb">
+                    <span>IT기술</span>
+                </button>
+                <button className="btnb">
+                    <span>IT기술</span>
+                </button>
+                <button className="btnb">
+                    <span>IT기술</span>
+                </button>
+                <button id="btna">
+                <span> > </span>
+                </button>
+                <button id="btnd">
+                    <span>...</span>
+                </button> 
             </div>
-            
+
             <div className="wrapper_first">
                 <ul className="site">
                 {dummySec01.CareerInsite.map((CareerInsite) => (

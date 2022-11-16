@@ -55,8 +55,7 @@ function SignUp ({closeModal,email}){
     }, [ageCheck,useCheck, marketingCheck])
 
     //sessionStorage 사용 하기 
-
-  
+    console.log({email})
     return(
 <div className="signUp_background">
     <div className = "signUp_wrapper">
@@ -69,9 +68,9 @@ function SignUp ({closeModal,email}){
     
             <div className="signUp_input_tit"> 이메일</div>
             <input className="signUp_input"
-            value={email}
-            // placeholder={loginId}
-            ></input>
+            placeholder='{email}'
+            >
+            </input>
     
             <div className="signUp_input_tit"> 이름</div>
             <input className="signUp_input"
