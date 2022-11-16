@@ -53,9 +53,22 @@ function SignUp ({closeModal,email}){
         setAllCheck(false)
       }
     }, [ageCheck,useCheck, marketingCheck])
-
     //sessionStorage 사용 하기 
-    console.log({email})
+
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [phoneNumberValid, setPhoneNumberValid] = useState(false);
+    const [notAllow, setNotAllow] = useState(true);
+
+    const handlePhoneNumber = (e) => {
+      setPhoneNumber(e.target.value);
+      const regex =/^01(?:0|1|[6-9])-(?:\d{3}|\d{4})-\d{4}$/;
+      if (regex.test(e.target.value)) {
+        setPhoneNumberValid(true);
+      } else {
+        setPhoneNumberValid(false);
+      }
+    };
+  
     return(
 <div className="signUp_background">
     <div className = "signUp_wrapper">
@@ -65,17 +78,14 @@ function SignUp ({closeModal,email}){
         <span>회원가입</span>
         </div>
         <div className="signUp_inputValue">
-    
+
             <div className="signUp_input_tit"> 이메일</div>
             <input className="signUp_input"
-            placeholder='{email}'
-            >
-            </input>
-    
+            placeholder="email"></input>
+
             <div className="signUp_input_tit"> 이름</div>
             <input className="signUp_input"
             placeholder='name'></input>
-
             <div className="signUp_input_tit">휴대폰 번호</div>
             <select className="signUp_input">
                 <option value="KR">South Korea +82</option>
@@ -252,16 +262,21 @@ function SignUp ({closeModal,email}){
                 <option value="ZW">Zimbabwe +263</option>
             </select>
             <div className="signUp_moblie">
-            <input type="text" placeholder="(예시) 01013245768" name="mobile" className="signUp_input">
+            <input type="text" placeholder="(예시) 01013245768" name="mobile" className="signUp_input"
+            onChange={handlePhoneNumber}>
             </input>
             <button type="button"  disabled="">
                 <span>인증번호 받기</span>
             </button>
             </div>
+            <div className="errorMessageWrap">
+            {!phoneNumberValid && phoneNumber.length > 0 && (
+            <div>올바른 전화번호를 입력해주세요.</div>
+            )}
+            </div>
             <div className="css-l9nhxs">
             <input type="text" placeholder="인증번호를 입력해주세요." name="authCode"  readOnly="" className="signUp_input"/>
             </div>
-
             <div className="signUp_input_tit">비밀번호</div>
             <input className="signUp_input"
             placeholder='비밀번호를 입력해주세요'></input>
@@ -291,7 +306,5 @@ function SignUp ({closeModal,email}){
     </div>
 </div>
     );
-
 }
-
 export default SignUp;

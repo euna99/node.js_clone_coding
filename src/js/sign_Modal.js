@@ -30,7 +30,6 @@ function SignModal({closeModal,showSignUp}) {
           setEmailValid(false);
         }
       };
-      console.log({email})
     return (
     <div
     className="login_background">
@@ -59,7 +58,7 @@ function SignModal({closeModal,showSignUp}) {
             {!emailValid && email.length > 0 && (
             <div>올바른 이메일을 입력해주세요.</div>
             )}
-        </div>
+            </div>
         <button onClick={()=>{showSignUp(email)}}
         disabled={notAllow}
         className = "login_btn" type="button">이메일로 계속하기</button>

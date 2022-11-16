@@ -72,6 +72,19 @@
     margin-bottom: 5px;
 }
 
+.signUp_email_div{
+    width: 100%;
+    height: 50px;
+    min-height: 50px;
+    padding: 0px 12px;
+    outline: none;
+    background-color: #e1e2e3;
+    border: 1px solid #e1e2e3;
+    box-sizing: border-box ;
+    margin-bottom: 5px;
+}
+
+
 .singUpP{
     color:gray;
     text-align: left;
