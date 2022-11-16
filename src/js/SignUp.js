@@ -57,17 +57,40 @@ function SignUp ({closeModal,email}){
 
     const [phoneNumber, setPhoneNumber] = useState('');
     const [phoneNumberValid, setPhoneNumberValid] = useState(false);
-    const [notAllow, setNotAllow] = useState(true);
 
     const handlePhoneNumber = (e) => {
       setPhoneNumber(e.target.value);
-      const regex =/^01(?:0|1|[6-9])-(?:\d{3}|\d{4})-\d{4}$/;
+      const regex =/^01(?:0|1|[6-9])(?:\d{3}|\d{4})\d{4}$/;
       if (regex.test(e.target.value)) {
         setPhoneNumberValid(true);
       } else {
         setPhoneNumberValid(false);
       }
     };
+//password
+    const [password,setPassword] = useState('');
+    const [passwordCheck,setPasswordCheck] = useState('');
+    const [passwordError,setPasswordError] = useState(false);
+    const onSubmit = (e) => {
+      e.preventDefault();
+        // 1. 비밀번호와 비밀번호 체크가 다를 경우를 검증한다
+
+      if(password !== passwordCheck){
+          return setPasswordError(true);
+      }
+      console.log({
+          password,
+          passwordCheck,
+      });
+  };
+const onChangePassword = (e) => {
+    setPassword(e.target.value);
+};
+  const onChangePasswordChk = (e) => {
+    //비밀번호를 입력할때마다 password 를 검증하는 함수
+    setPasswordError(e.target.value !== password);
+    setPasswordCheck(e.target.value);
+};
   
     return(
 <div className="signUp_background">
@@ -278,11 +301,18 @@ function SignUp ({closeModal,email}){
             <input type="text" placeholder="인증번호를 입력해주세요." name="authCode"  readOnly="" className="signUp_input"/>
             </div>
             <div className="signUp_input_tit">비밀번호</div>
+            <form onSubmit={onSubmit}>
             <input className="signUp_input"
-            placeholder='비밀번호를 입력해주세요'></input>
+            placeholder='비밀번호를 입력해주세요'
+            value={password} required onChange={onChangePassword}></input>
             <input className="signUp_input"
+            value={passwordCheck} required onChange={onChangePasswordChk}
             placeholder='비밀번호를 다시 한번 입력해주세요'></input>
-            <p data-testid="Typography" className="singUpP">영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상 16자 이하로 입력해주세요.</p>
+            {passwordError && <div style={{color : 'red'}}>비밀번호가 일치하지 않습니다.</div>}
+            </form>
+
+            <p data-testid="Typography" className="singUpP">
+            영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상 16자 이하로 입력해주세요.</p>
             <div className="agreement_container">
                 <div className="agreement_allcheck">
                     <input type="checkbox" id="allcheck" checked={allCheck} onChange={allBtnEvent}/>
