@@ -54,7 +54,7 @@ function SignUp ({closeModal,email}){
       }
     }, [ageCheck,useCheck, marketingCheck])
     //sessionStorage 사용 하기 
-
+//phoneNumber
     const [phoneNumber, setPhoneNumber] = useState('');
     const [phoneNumberValid, setPhoneNumberValid] = useState(false);
 
@@ -67,6 +67,8 @@ function SignUp ({closeModal,email}){
         setPhoneNumberValid(false);
       }
     };
+
+    console.log({phoneNumber})
 //password
     const [password,setPassword] = useState('');
     const [passwordCheck,setPasswordCheck] = useState('');
@@ -332,6 +334,7 @@ const onChangePassword = (e) => {
                     <label htmlFor="check_03">OneID 개인정보 수집 및 이용 동의(필수)</label>
                 </div>    
             </div>
+            <button>가입하기</button>
         </div>
     </div>
 </div>
