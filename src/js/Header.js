@@ -6,6 +6,7 @@ import SearchBar from './SearchBar';
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import SignUp from './SignUp';
+// import {BsFileEarmarkPersonFill} from 'react-icons/bs';
 
 function Header(){
         // 모달창 노출 여부 state
@@ -119,13 +120,14 @@ return(
             <BiSearch/> </button>
             {searchBarOpen===true ?<SearchBar searchBarOpen={searchBarOpen} closeSearchBar={closeSearchBar}/>:("")}
             
-            
+
             <button onClick={showModal}
             id="sign">회원가입/로그인</button>
-            {/* {signUpOpen===true?<SignUp closeSignUp={closeSignUp}/>: ""} */}
             {modalOpen===2&&<SignModal showModal={showModal} closeModal={closeModal} showSignUp={showSignUp} setLoginId={setLoginId} loginId={loginId}/>}
             {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp} />} 
             {/* setPw={setPw} password={password} logedIn={logedIn}  */}
+
+            {/* <BsFileEarmarkPersonFill></BsFileEarmarkPersonFill> */}
             
 
 
