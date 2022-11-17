@@ -97,7 +97,7 @@ function SignUp ({closeModal}){
   console.log({email})
   //email 값 가져오는
 
-
+//가입하기 버튼// 
   const [joinBtnnotAllow, setjoinBtnNotAllow] = useState(true);
   useEffect(() => {
     console.log(allCheck);
