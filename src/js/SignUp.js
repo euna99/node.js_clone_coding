@@ -1,7 +1,7 @@
 import '../css/SignUp.css';
 import {useState,useEffect} from 'react';
 
-function SignUp ({closeModal}){
+function SignUp ({closeModal}){ //logedIn 값 안넘겨줌
   const [allCheck, setAllCheck] = useState(false);
   const [ageCheck, setAgeCheck] = useState(false);
   const [useCheck, setUseCheck] = useState(false);
@@ -96,6 +96,7 @@ function SignUp ({closeModal}){
   const email=sessionStorage.getItem('loginId')
   console.log({email})
   //email 값 가져오는
+
 
 //가입하기 버튼// 
   const [joinBtnnotAllow, setjoinBtnNotAllow] = useState(true);
@@ -353,7 +354,9 @@ return(
                 </div>    
             </div>
         </div>
-        <button className="joinBtn" disabled={joinBtnnotAllow} >가입하기</button>
+        <button className="joinBtn" disabled={joinBtnnotAllow} 
+        //  onClick={logedIn(password}
+        >가입하기</button>
     </div>
   </div>
     );
