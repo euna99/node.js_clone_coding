@@ -45,20 +45,20 @@ let[password,setPw]=useState("");
 let[savedPw,setSavedPw]=useState("");
 let sessionStorage=window.sessionStorage;
 
-// let[login,setLogin]=useState(true);
-// const logedIn=(email,password)=>{
-//     sessionStorage.setItem("loginId", email);
-//     setSavedLoginId(sessionStorage.getItem("loginId"));
-//     sessionStorage.setItem("password",password);
-//     setSavedPw(sessionStorage.getItem("password"));
-//  if(email==="a653bc@naver.com"&&password==="pea"){
-//     setLogin(true);
-//     console.log("로그인 성공")
-//  }
-//  else{
-//     console.log("로그인 실패")
-//  }
-// }
+let[login,setLogin]=useState(0);
+const logedIn=(email,password)=>{
+    sessionStorage.setItem("loginId", email);
+    setSavedLoginId(sessionStorage.getItem("loginId"));
+    sessionStorage.setItem("password",password);
+    setSavedPw(sessionStorage.getItem("password"));
+ if(email==="a653bc@naver.com"&&password==="pea"){
+    setLogin(true);
+    console.log("로그인 성공")
+ }
+ else{
+    console.log("로그인 실패")
+ }
+}
 
 
 
@@ -124,8 +124,8 @@ return(
             <button onClick={showModal}
             id="sign">회원가입/로그인</button>
             {modalOpen===2&&<SignModal showModal={showModal} closeModal={closeModal} showSignUp={showSignUp} setLoginId={setLoginId} loginId={loginId}/>}
-            {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp} />} 
-            {/* setPw={setPw} password={password} logedIn={logedIn}  */}
+            {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp} setPw={setPw} password={password} logedIn={logedIn}  />} 
+            
 
             {/* <BsFileEarmarkPersonFill></BsFileEarmarkPersonFill> */}
             

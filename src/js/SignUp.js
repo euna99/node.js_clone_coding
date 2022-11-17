@@ -110,6 +110,9 @@ function SignUp ({closeModal}){ //logedIn 값 안넘겨줌
       setjoinBtnNotAllow(true);
   }, [allCheck,phoneNumber,passwordError]);
 
+  console.log ("password"+password)
+  sessionStorage.setItem("password",password);
+
 return(
   <div className="signUp_background">
     <div className = "signUp_wrapper">
