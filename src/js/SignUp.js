@@ -68,7 +68,6 @@ function SignUp ({closeModal,loginId}){
       }
     };
 
-    console.log({phoneNumber})
 //password
     const [password,setPassword] = useState('');
     const [passwordCheck,setPasswordCheck] = useState('');
@@ -84,7 +83,7 @@ function SignUp ({closeModal,loginId}){
           password,
           passwordCheck,
       });
-  };
+};
 const onChangePassword = (e) => {
     setPassword(e.target.value);
 };
@@ -95,7 +94,6 @@ const onChangePassword = (e) => {
 };
   
 const email=sessionStorage.getItem('loginId')
-console.log(sessionStorage.getItem('loginId'))
 console.log({email})
 
 
@@ -110,7 +108,9 @@ console.log({email})
         <div className="signUp_inputValue">
 
             <div className="signUp_input_tit"> 이메일</div>
-            <div className="signUp_input">{email}</div>
+            <div className="signUp_email_div">
+             <div className="email_palceHorder">{email}</div> 
+            </div>
 
             <div className="signUp_input_tit"> 이름</div>
             <input className="signUp_input"
