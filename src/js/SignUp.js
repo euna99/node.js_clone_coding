@@ -101,9 +101,9 @@ function SignUp ({closeModal}){ //logedIn 값 안넘겨줌
 //가입하기 버튼// 
   const [joinBtnnotAllow, setjoinBtnNotAllow] = useState(true);
   useEffect(() => {
-    console.log(allCheck);
     // console.log({})
-  if(allCheck===true&&phoneNumberValid===true&&passwordError===false ) {
+  if(allChec
+    &&phoneNumberValid===true&&passwordError===false ) {
       setjoinBtnNotAllow(false);
       return;
     }
