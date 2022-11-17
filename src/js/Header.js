@@ -41,6 +41,7 @@ let [savedLoginId, setSavedLoginId] = useState("");
 
 let sessionStorage = window.sessionStorage;
 
+
 return(
     
     <div className="header">
@@ -104,7 +105,7 @@ return(
             id="sign">회원가입/로그인</button>
             {/* {signUpOpen===true?<SignUp closeSignUp={closeSignUp}/>: ""} */}
             {modalOpen===2&&<SignModal showModal={showModal} closeModal={closeModal} showSignUp={showSignUp} setLoginId={setLoginId} loginId={loginId}  />}
-            {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp} loginId={loginId} />} 
+            {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp} />} 
             
 
 

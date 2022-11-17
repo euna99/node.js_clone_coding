@@ -1,12 +1,13 @@
 import '../css/SignUp.css';
 import {useState,useEffect} from 'react';
 
-function SignUp ({closeModal,loginId}){
+function SignUp ({closeModal}){
+
     const [allCheck, setAllCheck] = useState(false);
     const [ageCheck, setAgeCheck] = useState(false);
     const [useCheck, setUseCheck] = useState(false);
     const [marketingCheck, setMarketingCheck] = useState(false);
-  
+
     const allBtnEvent =()=>{
         
       if(allCheck === false) {
@@ -21,7 +22,7 @@ function SignUp ({closeModal,loginId}){
         setMarketingCheck(false);
       } 
     };
-    
+
     const ageBtnEvent =()=>{
       if(ageCheck === false) {
         setAgeCheck(true)
@@ -29,7 +30,7 @@ function SignUp ({closeModal,loginId}){
         setAgeCheck(false)
       }
     };
-    
+
     const useBtnEvent =()=>{
       if(useCheck === false) {
         setUseCheck(true)
@@ -37,7 +38,7 @@ function SignUp ({closeModal,loginId}){
         setUseCheck(false)
       }
     };
-    
+
     const marketingBtnEvent =()=>{
       if(marketingCheck === false) {
         setMarketingCheck(true)
@@ -45,7 +46,7 @@ function SignUp ({closeModal,loginId}){
         setMarketingCheck(false)
       }
     };
-  
+
     useEffect(()=>{
       if(ageCheck===true && useCheck===true && marketingCheck===true){
         setAllCheck(true)
@@ -53,8 +54,8 @@ function SignUp ({closeModal,loginId}){
         setAllCheck(false)
       }
     }, [ageCheck,useCheck, marketingCheck])
-    //sessionStorage 사용 하기 
-//phoneNumber
+      //sessionStorage 사용 하기 
+    //phoneNumber
     const [phoneNumber, setPhoneNumber] = useState('');
     const [phoneNumberValid, setPhoneNumberValid] = useState(false);
 
@@ -69,20 +70,20 @@ function SignUp ({closeModal,loginId}){
     };
 
 //password
-    const [password,setPassword] = useState('');
-    const [passwordCheck,setPasswordCheck] = useState('');
-    const [passwordError,setPasswordError] = useState(false);
-    const onSubmit = (e) => {
-      e.preventDefault();
-        // 1. 비밀번호와 비밀번호 체크가 다를 경우를 검증한다
+const [password,setPassword] = useState('');
+const [passwordCheck,setPasswordCheck] = useState('');
+const [passwordError,setPasswordError] = useState(false);
+const onSubmit = (e) => {
+  e.preventDefault();
+    // 1. 비밀번호와 비밀번호 체크가 다를 경우를 검증한다
 
-      if(password !== passwordCheck){
-          return setPasswordError(true);
-      }
-      console.log({
-          password,
-          passwordCheck,
-      });
+    if(password !== passwordCheck){
+        return setPasswordError(true);
+    }
+    console.log({
+        password,
+        passwordCheck,
+    });
 };
 const onChangePassword = (e) => {
     setPassword(e.target.value);
@@ -96,8 +97,7 @@ const onChangePassword = (e) => {
 const email=sessionStorage.getItem('loginId')
 console.log({email})
 
-
-    return(
+return(
   <div className="signUp_background">
     <div className = "signUp_wrapper">
         <div className="signUp_header">
@@ -340,8 +340,8 @@ console.log({email})
                     <label htmlFor="check_03">OneID 개인정보 수집 및 이용 동의(필수)</label>
                 </div>    
             </div>
-            <button>가입하기</button>
         </div>
+        <button className="joinBtn">가입하기</button>
     </div>
   </div>
     );
