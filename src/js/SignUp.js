@@ -1,7 +1,7 @@
 import '../css/SignUp.css';
 import {useState,useEffect} from 'react';
 
-function SignUp ({closeModal,email}){
+function SignUp ({closeModal,loginId}){
     const [allCheck, setAllCheck] = useState(false);
     const [ageCheck, setAgeCheck] = useState(false);
     const [useCheck, setUseCheck] = useState(false);
@@ -94,8 +94,13 @@ const onChangePassword = (e) => {
     setPasswordCheck(e.target.value);
 };
   
+const email=sessionStorage.getItem('loginId')
+console.log(sessionStorage.getItem('loginId'))
+console.log({email})
+
+
     return(
-<div className="signUp_background">
+  <div className="signUp_background">
     <div className = "signUp_wrapper">
         <div className="signUp_header">
         <button onClick={closeModal} 
@@ -105,8 +110,7 @@ const onChangePassword = (e) => {
         <div className="signUp_inputValue">
 
             <div className="signUp_input_tit"> 이메일</div>
-            <input className="signUp_input"
-            placeholder="email"></input>
+            <div className="signUp_input">{email}</div>
 
             <div className="signUp_input_tit"> 이름</div>
             <input className="signUp_input"
@@ -306,8 +310,10 @@ const onChangePassword = (e) => {
             <form onSubmit={onSubmit}>
             <input className="signUp_input"
             placeholder='비밀번호를 입력해주세요'
+            type="password"
             value={password} required onChange={onChangePassword}></input>
             <input className="signUp_input"
+            type="password"
             value={passwordCheck} required onChange={onChangePasswordChk}
             placeholder='비밀번호를 다시 한번 입력해주세요'></input>
             {passwordError && <div style={{color : 'red'}}>비밀번호가 일치하지 않습니다.</div>}
@@ -337,7 +343,7 @@ const onChangePassword = (e) => {
             <button>가입하기</button>
         </div>
     </div>
-</div>
+  </div>
     );
 }
 export default SignUp;

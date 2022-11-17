@@ -30,6 +30,8 @@ function SignModal({closeModal,showSignUp}) {
           setEmailValid(false);
         }
       };
+      console.log({email})
+
     return (
     <div
     className="login_background">
