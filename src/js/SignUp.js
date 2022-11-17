@@ -2,100 +2,112 @@ import '../css/SignUp.css';
 import {useState,useEffect} from 'react';
 
 function SignUp ({closeModal}){
+  const [allCheck, setAllCheck] = useState(false);
+  const [ageCheck, setAgeCheck] = useState(false);
+  const [useCheck, setUseCheck] = useState(false);
+  const [marketingCheck, setMarketingCheck] = useState(false);
 
-    const [allCheck, setAllCheck] = useState(false);
-    const [ageCheck, setAgeCheck] = useState(false);
-    const [useCheck, setUseCheck] = useState(false);
-    const [marketingCheck, setMarketingCheck] = useState(false);
+  const allBtnEvent =()=>{
+      
+    if(allCheck === false) {
+      setAllCheck(true);
+      setAgeCheck(true);
+      setUseCheck(true);
+      setMarketingCheck(true);
+    }else {
+      setAllCheck(false);
+      setAgeCheck(false);
+      setUseCheck(false);
+      setMarketingCheck(false);
+    } 
+  };
 
-    const allBtnEvent =()=>{
-        
-      if(allCheck === false) {
-        setAllCheck(true);
-        setAgeCheck(true);
-        setUseCheck(true);
-        setMarketingCheck(true);
-      }else {
-        setAllCheck(false);
-        setAgeCheck(false);
-        setUseCheck(false);
-        setMarketingCheck(false);
-      } 
-    };
-
-    const ageBtnEvent =()=>{
-      if(ageCheck === false) {
-        setAgeCheck(true)
-      }else {
-        setAgeCheck(false)
-      }
-    };
-
-    const useBtnEvent =()=>{
-      if(useCheck === false) {
-        setUseCheck(true)
-      }else {
-        setUseCheck(false)
-      }
-    };
-
-    const marketingBtnEvent =()=>{
-      if(marketingCheck === false) {
-        setMarketingCheck(true)
-      }else {
-        setMarketingCheck(false)
-      }
-    };
-
-    useEffect(()=>{
-      if(ageCheck===true && useCheck===true && marketingCheck===true){
-        setAllCheck(true)
-      } else {
-        setAllCheck(false)
-      }
-    }, [ageCheck,useCheck, marketingCheck])
-      //sessionStorage 사용 하기 
-    //phoneNumber
-    const [phoneNumber, setPhoneNumber] = useState('');
-    const [phoneNumberValid, setPhoneNumberValid] = useState(false);
-
-    const handlePhoneNumber = (e) => {
-      setPhoneNumber(e.target.value);
-      const regex =/^01(?:0|1|[6-9])(?:\d{3}|\d{4})\d{4}$/;
-      if (regex.test(e.target.value)) {
-        setPhoneNumberValid(true);
-      } else {
-        setPhoneNumberValid(false);
-      }
-    };
-
-//password
-const [password,setPassword] = useState('');
-const [passwordCheck,setPasswordCheck] = useState('');
-const [passwordError,setPasswordError] = useState(false);
-const onSubmit = (e) => {
-  e.preventDefault();
-    // 1. 비밀번호와 비밀번호 체크가 다를 경우를 검증한다
-
-    if(password !== passwordCheck){
-        return setPasswordError(true);
+  const ageBtnEvent =()=>{
+    if(ageCheck === false) {
+      setAgeCheck(true)
+    }else {
+      setAgeCheck(false)
     }
-    console.log({
-        password,
-        passwordCheck,
-    });
-};
-const onChangePassword = (e) => {
-    setPassword(e.target.value);
-};
+  };
+
+  const useBtnEvent =()=>{
+    if(useCheck === false) {
+      setUseCheck(true)
+    }else {
+      setUseCheck(false)
+    }
+  };
+
+  const marketingBtnEvent =()=>{
+    if(marketingCheck === false) {
+      setMarketingCheck(true)
+    }else {
+      setMarketingCheck(false)
+    }
+  };
+
+  useEffect(()=>{
+    if(ageCheck===true && useCheck===true && marketingCheck===true){
+      setAllCheck(true)
+    } else {
+      setAllCheck(false)
+    }
+  }, [ageCheck,useCheck, marketingCheck])
+    //sessionStorage 사용 하기 
+  //phoneNumber
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [phoneNumberValid, setPhoneNumberValid] = useState(false);
+
+  const handlePhoneNumber = (e) => {
+    setPhoneNumber(e.target.value);
+    const regex =/^01(?:0|1|[6-9])(?:\d{3}|\d{4})\d{4}$/;
+    if (regex.test(e.target.value)) {
+      setPhoneNumberValid(true);
+    } else {
+      setPhoneNumberValid(false);
+    }
+  };
+
+  //password
+  const [password,setPassword] = useState('');
+  const [passwordCheck,setPasswordCheck] = useState('');
+  const [passwordError,setPasswordError] = useState(false);
+  const onSubmit = (e) => {
+  e.preventDefault();
+  // 1. 비밀번호와 비밀번호 체크가 다를 경우를 검증한다
+
+  if(password !== passwordCheck){
+      return setPasswordError(true);
+  }
+  console.log({
+      password,
+      passwordCheck,
+  });
+  };
+  const onChangePassword = (e) => {
+  setPassword(e.target.value);
+  };
   const onChangePasswordChk = (e) => {
-    //비밀번호를 입력할때마다 password 를 검증하는 함수
-    setPasswordError(e.target.value !== password);
-    setPasswordCheck(e.target.value);
-};
-  
-const email=sessionStorage.getItem('loginId')
-console.log({email})
+  //비밀번호를 입력할때마다 password 를 검증하는 함수
+  setPasswordError(e.target.value !== password);
+  setPasswordCheck(e.target.value);
+  };
+
+  const email=sessionStorage.getItem('loginId')
+  console.log({email})
+  //email 값 가져오는
+
+
+  const [notAllow, setNotAllow] = useState(true);
+  useEffect(() => {
+    console.log(allCheck);
+    // console.log({})
+  if(allCheck===true&&phoneNumberValid===true&&passwordError===false ) {
+      setNotAllow(false);
+      return;
+    }
+      setNotAllow(true);
+  }, [allCheck,phoneNumber,passwordError]);
 
 return(
   <div className="signUp_background">
@@ -341,7 +353,7 @@ return(
                 </div>    
             </div>
         </div>
-        <button className="joinBtn">가입하기</button>
+        <button className="joinBtn" disabled={notAllow} >가입하기</button>
     </div>
   </div>
     );
