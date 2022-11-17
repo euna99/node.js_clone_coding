@@ -98,15 +98,15 @@ function SignUp ({closeModal}){
   //email 값 가져오는
 
 
-  const [notAllow, setNotAllow] = useState(true);
+  const [joinBtnnotAllow, setjoinBtnNotAllow] = useState(true);
   useEffect(() => {
     console.log(allCheck);
     // console.log({})
   if(allCheck===true&&phoneNumberValid===true&&passwordError===false ) {
-      setNotAllow(false);
+      setjoinBtnNotAllow(false);
       return;
     }
-      setNotAllow(true);
+      setjoinBtnNotAllow(true);
   }, [allCheck,phoneNumber,passwordError]);
 
 return(
@@ -353,7 +353,7 @@ return(
                 </div>    
             </div>
         </div>
-        <button className="joinBtn" disabled={notAllow} >가입하기</button>
+        <button className="joinBtn" disabled={joinBtnnotAllow} >가입하기</button>
     </div>
   </div>
     );
