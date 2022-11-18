@@ -12,25 +12,25 @@ function SignModal({closeModal,showSignUp}) {
     const [emailValid, setEmailValid] = useState(false);
     const [notAllow, setNotAllow] = useState(true);
 
-    useEffect(() => {
-        if(emailValid===true ) {
-          setNotAllow(false);
-          return;
-        }
-        setNotAllow(true);
-      }, [emailValid]);
+useEffect(() => {
+    if(emailValid===true ) {
+        setNotAllow(false);
+        return;
+    }
+    setNotAllow(true);
+    }, [emailValid]);
 
-      const handleEmail = (e) => {
-        setEmail(e.target.value);
-        const regex =
-          /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
-        if (regex.test(e.target.value)) {
-          setEmailValid(true);
-        } else {
-          setEmailValid(false);
-        }
-      };
-      console.log({email})
+    const handleEmail = (e) => {
+    setEmail(e.target.value);
+    const regex =
+        /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+    if (regex.test(e.target.value)) {
+        setEmailValid(true);
+    } else {
+        setEmailValid(false);
+    }
+    };
+    console.log({email})
 
     return (
     <div

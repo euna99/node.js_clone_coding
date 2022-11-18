@@ -102,8 +102,7 @@ function SignUp ({closeModal}){ //logedIn 값 안넘겨줌
   const [joinBtnnotAllow, setjoinBtnNotAllow] = useState(true);
   useEffect(() => {
     // console.log({})
-  if(allChec
-    &&phoneNumberValid===true&&passwordError===false ) {
+  if(allCheck===true&&phoneNumberValid===true&&passwordError===false ) {
       setjoinBtnNotAllow(false);
       return;
     }
@@ -125,7 +124,7 @@ return(
 
             <div className="signUp_input_tit"> 이메일</div>
             <div className="signUp_email_div">
-             <div className="email_palceHorder">{email}</div> 
+            <div className="email_palceHorder">{email}</div> 
             </div>
 
             <div className="signUp_input_tit"> 이름</div>
@@ -336,7 +335,7 @@ return(
             </form>
 
             <p data-testid="Typography" className="singUpP">
-            영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상 16자 이하로 입력해주세요.</p>
+            영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상 16자 이하로 입력해주세요..</p>
             <div className="agreement_container">
                 <div className="agreement_allcheck">
                     <input type="checkbox" id="allcheck" checked={allCheck} onChange={allBtnEvent}/>
