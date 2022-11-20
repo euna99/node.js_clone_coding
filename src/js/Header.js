@@ -6,7 +6,7 @@ import SearchBar from './SearchBar';
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import SignUp from './SignUp';
-import {BsFileEarmarkPersonFill} from 'react-icons/bs';
+// import {BsFileEarmarkPersonFill} from 'react-icons/bs';
 
 function Header(){
         // 모달창 노출 여부 state
@@ -127,7 +127,7 @@ return(
             {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp} setPw={setPw} password={password} logedIn={logedIn}  />} 
             
 
-            <BsFileEarmarkPersonFill></BsFileEarmarkPersonFill>
+            {/* <BsFileEarmarkPersonFill></BsFileEarmarkPersonFill> */}
             
 
 
