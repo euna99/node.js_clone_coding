@@ -3,10 +3,10 @@ import '../css/Header.css';
 import { BiSearch } from 'react-icons/bi';
 import SignModal from './sign_Modal';
 import SearchBar from './SearchBar';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import SignUp from './SignUp';
-// import {BsFileEarmarkPersonFill} from 'react-icons/bs';
+import {BsFileEarmarkPersonFill} from 'react-icons/bs';
 
 function Header(){
         // 모달창 노출 여부 state
@@ -51,15 +51,24 @@ const logedIn=(email,password)=>{
     setSavedLoginId(sessionStorage.getItem("loginId"));
     sessionStorage.setItem("password",password);
     setSavedPw(sessionStorage.getItem("password"));
- if(email==="a653bc@naver.com"&&password==="pea"){
-    setLogin(true);
-    console.log("로그인 성공")
- }
- else{
-    console.log("로그인 실패")
- }
+//  if(email==="a653bc@naver.com"&&password==="pea"){
+//     setLogin(true);
+//     console.log("로그인 성공")
+//  }
+//  else{
+//     console.log("로그인 실패")
+//  }
 }
 
+const [get,setLogedIn]=useState(false)
+const haveLogedin =(email,password)=>{
+    if(email==="a653bc@naver.com"&&password==="pea"){
+        setLogedIn(true);
+    }
+    else{
+        setLogedIn(false);
+    }
+}
 
 
 return(
@@ -126,10 +135,7 @@ return(
             {modalOpen===2&&<SignModal showModal={showModal} closeModal={closeModal} showSignUp={showSignUp} setLoginId={setLoginId} loginId={loginId}/>}
             {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp} setPw={setPw} password={password} logedIn={logedIn}  />} 
             
-
-            {/* <BsFileEarmarkPersonFill></BsFileEarmarkPersonFill> */}
-            
-
+            {get===true&&<BsFileEarmarkPersonFill haveLogedin={haveLogedin}/>}
 
             <button id="service">기업서비스</button>
         </div>
