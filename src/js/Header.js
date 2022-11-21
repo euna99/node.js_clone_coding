@@ -46,29 +46,22 @@ let[savedPw,setSavedPw]=useState("");
 let sessionStorage=window.sessionStorage;
 
 
-const logedIn=(email,password)=>{
-    sessionStorage.setItem("loginId", email);
+const logedIn=()=>{
     setSavedLoginId(sessionStorage.getItem("loginId"));
-    sessionStorage.setItem("password",password);
+
     setSavedPw(sessionStorage.getItem("password"));
- if(email&&password){
+ if(savedLoginId&&savedPw){
     console.log("로그인 성공")
+    setModalOpen(4);
  }
  else{
     console.log("로그인 실패")
+    setModalOpen(1);
  }
 }
 
 
-// const [get,setLogedIn]=useState(false)
-// const haveLogedin =(email,password)=>{
-//     if(email&&password){
-//         setLogedIn(true);
-//     }
-//     else{
-//         setLogedIn(false);
-//     }
-// }
+
 
 
 return(
@@ -129,13 +122,12 @@ return(
             <BiSearch/> </button>
             {searchBarOpen===true ?<SearchBar searchBarOpen={searchBarOpen} closeSearchBar={closeSearchBar}/>:("")}
             
-
-            <button onClick={showModal}
-            id="sign">회원가입/로그인</button>
+            {modalOpen===4 ? <BsFileEarmarkPersonFill/> : <button onClick={showModal}
+            id="sign">회원가입/로그인</button> }
             {modalOpen===2&&<SignModal showModal={showModal} closeModal={closeModal} showSignUp={showSignUp} setLoginId={setLoginId} loginId={loginId}/>}
             {modalOpen===3&&<SignUp closeModal={closeModal} showSignUp={showSignUp} setPw={setPw} password={password} logedIn={logedIn}  />} 
             
-            {/* {get===true&&<BsFileEarmarkPersonFill haveLogedin={haveLogedin}/>} */}
+            {/* {modalOpen===4&&<BsFileEarmarkPersonFill/>}  */}
 
             <button id="service">기업서비스</button>
         </div>

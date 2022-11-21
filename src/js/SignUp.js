@@ -86,6 +86,7 @@ function SignUp ({closeModal,logedIn}){ //logedIn 값 안넘겨줌
   };
   const onChangePassword = (e) => {
   setPassword(e.target.value);
+  sessionStorage.setItem("password",e.target.value);
   };
   const onChangePasswordChk = (e) => {
   //비밀번호를 입력할때마다 password 를 검증하는 함수
