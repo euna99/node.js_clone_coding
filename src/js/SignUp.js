@@ -1,7 +1,7 @@
 import '../css/SignUp.css';
 import {useState,useEffect} from 'react';
 
-function SignUp ({closeModal,haveLogedIn}){ //logedIn 값 안넘겨줌
+function SignUp ({closeModal,logedIn}){ //logedIn 값 안넘겨줌
   const [allCheck, setAllCheck] = useState(false);
   const [ageCheck, setAgeCheck] = useState(false);
   const [useCheck, setUseCheck] = useState(false);
@@ -357,7 +357,7 @@ return(
             </div>
         </div>
         <button className="joinBtn" disabled={joinBtnnotAllow} 
-         onClick={haveLogedIn}
+         onClick={logedIn}
         >가입하기</button>
     </div>
   </div>
