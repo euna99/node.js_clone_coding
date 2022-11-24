@@ -4,17 +4,19 @@ import DevBookMark from "./DevBookMark";
 import DevWrap from "./Dev_wrap";
 import { useState,useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {ADD,UN} from "../modules/counter";
+import {add,un} from "../modules/counter";
 
 function Dev_Page() {
   const number=useSelector(state=>state.counter);
   const dispatch=useDispatch();
   const onADD=()=>{
-    dispatch(ADD());
+    dispatch(add());
+    alert("북마크");
   };
   const onUN=()=>{
-    dispatch(UN());
+    dispatch(un());
   };
+
 const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
 const [DevStatus, setDevStatus] = useState(false);
 function handleScroll() {

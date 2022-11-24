@@ -4,7 +4,6 @@ import DevDummy from '../json/Dev_wrap.json'
 import {Link} from 'react-router-dom';
 import {CiBookmark} from 'react-icons/ci';
 import Counter from '../modules/counter';
-import {useSelector,useDispatch} from 'react-redux';
 
 function DevWrap(onADD){
     return(
