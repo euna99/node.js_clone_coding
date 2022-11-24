@@ -2,9 +2,10 @@ import '../css/reset.css';
 import '../css/page2.css';
 import DevDummy from '../json/Dev_wrap.json'
 import {Link} from 'react-router-dom';
-import {CiBookmark} from 'react-icons/ci'
+import {CiBookmark} from 'react-icons/ci';
 
 function DevWrap(){
+
     return(
         <div className="dev_wrap">
         <ul>
@@ -26,7 +27,10 @@ function DevWrap(){
           {DevDummy.dev.map((dev) => (
                 <li key={dev.id}>
                     <div className="dev_wrap_top">
-                        <CiBookmark className="wrap_bookMark"></CiBookmark>
+                        <CiBookmark
+                        //onClick={()=>{dispatch({type:"증가"})}}
+                        className="wrap_bookMark">
+                        </CiBookmark>
                         <img className="dev_wrap_img"
                         src={dev.imgUrl} alt={dev.alt}/>
                     </div>
