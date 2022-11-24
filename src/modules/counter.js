@@ -1,5 +1,5 @@
-const ADD="counter/ADD";
-const UN="counter/UN";
+const ADD='ADD';
+const UN='UN';
 
 export const add=(id)=>({type:ADD,id});
 export const un=(id)=>({type:UN,id});

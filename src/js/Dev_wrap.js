@@ -4,8 +4,12 @@ import DevDummy from '../json/Dev_wrap.json'
 import {Link} from 'react-router-dom';
 import {CiBookmark} from 'react-icons/ci';
 import Counter from '../modules/counter';
+import {useSelector,useDispatch} from 'react-redux';
+import {ADD,UN} from '../modules/counter'
 
 function DevWrap(){
+    const number=useSelector(state=>state.counter);
+    
 
     return(
         <div className="dev_wrap">
