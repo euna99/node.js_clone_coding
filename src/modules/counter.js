@@ -1,4 +1,3 @@
-
 const ADD="counter/ADD";
 const UN="counter/UN";
 
@@ -11,6 +10,7 @@ function counter(state=initialState, action) {
     switch(action.type){
         case ADD:
            return (state=[...state,action.id]);
+        //    alert("북마크됨");
 
         case UN:
            return{
@@ -21,3 +21,4 @@ function counter(state=initialState, action) {
         }
 }
 
+export default counter;

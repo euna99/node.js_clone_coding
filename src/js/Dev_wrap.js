@@ -3,6 +3,7 @@ import '../css/page2.css';
 import DevDummy from '../json/Dev_wrap.json'
 import {Link} from 'react-router-dom';
 import {CiBookmark} from 'react-icons/ci';
+import Counter from '../modules/counter';
 
 function DevWrap(){
 
@@ -24,23 +25,25 @@ function DevWrap(){
             채용보상금 1,000,000원
             </div>
           </li>
-          {DevDummy.dev.map((dev) => (
-                <li key={dev.id}>
-                    <div className="dev_wrap_top">
-                        <CiBookmark
-                        //onClick={()=>{dispatch({type:"증가"})}}
-                        className="wrap_bookMark">
-                        </CiBookmark>
-                        <img className="dev_wrap_img"
-                        src={dev.imgUrl} alt={dev.alt}/>
-                    </div>
-                    <div className="dev_wrap_bottom">
-                    <h3>{dev.imgTit}</h3>
-                      {dev.imgPot}<br/>
-                      {dev.money}
-                    </div>       
-                </li>
-                ))};
+          <Counter>
+         {DevDummy.dev.map((dev) => (
+          <li key={dev.id}>
+              <div className="dev_wrap_top">
+                  <CiBookmark
+                  //onClick={()=>{dispatch({type:"증가"})}}
+                  className="wrap_bookMark">
+                  </CiBookmark>
+                  <img className="dev_wrap_img"
+                  src={dev.imgUrl} alt={dev.alt}/>
+              </div>
+              <div className="dev_wrap_bottom">
+              <h3>{dev.imgTit}</h3>
+                {dev.imgPot}<br/>
+                {dev.money}
+              </div>       
+          </li>
+              ))};
+          </Counter>
         </ul>
     </div>
     );
