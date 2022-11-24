@@ -1,27 +1,23 @@
-import {useSelector,useDispatch } from 'react-redux';
-import {createStore} from 'redux';
 
 const ADD="counter/ADD";
 const UN="counter/UN";
 
-export const add=()=>({type:ADD});
-export const un=()=>({type:UN});
+export const add=(id)=>({type:ADD,id});
+export const un=(id)=>({type:UN,id});
 
 const initialState=[];
 
-function counter(State=initialState, action) {
+function counter(state=initialState, action) {
     switch(action.type){
         case ADD:
-           return{
-
-           }; 
+           return (state=[...state,action.id]);
 
         case UN:
            return{
 
            }; 
         default:
-            return State;
+            return state;
         }
 }
 
