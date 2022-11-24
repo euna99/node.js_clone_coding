@@ -5,12 +5,8 @@ import {Link} from 'react-router-dom';
 import {CiBookmark} from 'react-icons/ci';
 import Counter from '../modules/counter';
 import {useSelector,useDispatch} from 'react-redux';
-import {ADD,UN} from '../modules/counter'
 
-function DevWrap(){
-    const number=useSelector(state=>state.counter);
-    
-
+function DevWrap(onADD){
     return(
         <div className="dev_wrap">
         <ul>
@@ -34,6 +30,7 @@ function DevWrap(){
           <li key={dev.id}>
               <div className="dev_wrap_top">
                   <CiBookmark
+                  onClick={onADD}
                   //onClick={()=>{dispatch({type:"증가"})}}
                   className="wrap_bookMark">
                   </CiBookmark>
