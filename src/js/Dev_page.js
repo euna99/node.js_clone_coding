@@ -10,12 +10,14 @@ function Dev_Page() {
   //여기가 리덕스 쓰는 페이지 넣는 부분 
   const number=useSelector(state=>state.counter);
   const dispatch=useDispatch();
-  const onADD=()=>{
-    dispatch(add([]));
+  // const ary=[];
+  // const markedAry=[];
+  const onADD=(id)=>{
+    dispatch(add(id));
     alert("북마크");
   };
-  const onUN=()=>{
-    dispatch(un([]));
+  const onUN=(e)=>{
+    dispatch(un(e));
   };
 
 const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
@@ -42,16 +44,19 @@ useEffect(() => {
   }; //  window 에서 스크롤을 감시를 종료
 });
 
-console.log(number)
+// const BookMarkAll=()=>{
+//   console.log(number)
+// }
+console.log (number);
 
- return (
-  <>
-    <DevTitle  DevStatus={DevStatus}/>
-    <DevFilter DevStatus={DevStatus}/>
-    <DevBookMark />
-    <DevWrap number={number} onADD={onADD} onUN={onUN}/>
-  </>
- );
+return (
+<>
+  <DevTitle  DevStatus={DevStatus}/>
+  <DevFilter DevStatus={DevStatus}/>
+  <DevBookMark />
+  <DevWrap number={number} onADD={onADD} onUN={onUN}/>
+</>
+);
 }
 
 export default Dev_Page;

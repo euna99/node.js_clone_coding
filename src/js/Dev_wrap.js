@@ -3,7 +3,13 @@ import '../css/page2.css';
 import DevDummy from '../json/Dev_wrap.json'
 import {Link} from 'react-router-dom';
 import {CiBookmark} from 'react-icons/ci';
+import {BsBookmarkFill} from 'react-icons/bs';
+import {useState} from 'react'
 function DevWrap({onADD}){
+  const [bk,setBk]=useState(false);
+  const bked=()=>{
+    setBk(true);
+  }
     return(
         <div className="dev_wrap">
         <ul>
@@ -25,10 +31,12 @@ function DevWrap({onADD}){
         {DevDummy.dev.map((dev) => (
           <li key={dev.id}>
               <div className="dev_wrap_top">
-                  <CiBookmark onClick={onADD}
-                  //onClick={()=>{dispatch({type:"증가"})}}
-                  className="wrap_bookMark">
+                  <CiBookmark //olnCick=(id)=>{onADD}
+                  onClick={()=>{(onADD(dev.id))}}
+                  className={"wrap_bookMark"}>
                   </CiBookmark>
+                 {/* {bk===true?<BsBookmarkFill bked={bked}/>}  */}
+
                   <img className="dev_wrap_img"
                   src={dev.imgUrl} alt={dev.alt}/>
               </div>

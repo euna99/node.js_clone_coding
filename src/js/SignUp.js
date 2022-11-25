@@ -357,9 +357,9 @@ return(
                 </div>    
             </div>
         </div>
-        <button className="joinBtn" disabled={joinBtnnotAllow} 
-         onClick={logedIn}
-        >가입하기</button>
+        <button className="joinBtn" disabled={joinBtnnotAllow} onClick={logedIn}>
+          가입하기
+        </button>
     </div>
   </div>
     );
