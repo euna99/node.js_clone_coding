@@ -5,7 +5,7 @@ import {Link, useSearchParams} from 'react-router-dom';
 import {CiBookmark} from 'react-icons/ci';
 import Counter from '../modules/counter';
 
-function DevWrap(onAdd){
+function DevWrap(onADD){
     return(
         <div className="dev_wrap">
         <ul>
@@ -25,10 +25,10 @@ function DevWrap(onAdd){
             </div>
           </li>
         <Counter>
-         {DevDummy.dev.map((dev) => (
+        {DevDummy.dev.map((dev) => (
           <li key={dev.id}>
               <div className="dev_wrap_top">
-                  <CiBookmark onClick={onAdd}
+                  <CiBookmark onClick={onADD}
                   //onClick={()=>{dispatch({type:"증가"})}}
                   className="wrap_bookMark">
                   </CiBookmark>
@@ -42,7 +42,7 @@ function DevWrap(onAdd){
               </div>       
           </li>
               ))};
-          </Counter>
+        </Counter>
         </ul>
     </div>
     );

@@ -5,7 +5,6 @@ import DevWrap from "./Dev_wrap";
 import { useState,useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {add,un} from "../modules/counter";
-import CounterContainer from "./CouterContainer";
 
 function Dev_Page() {
   const number=useSelector(state=>state.counter);
@@ -41,12 +40,12 @@ useEffect(() => {
 });
 
  return (
-  <CounterContainer>
+  <>
     <DevTitle  DevStatus={DevStatus}/>
     <DevFilter DevStatus={DevStatus}/>
     <DevBookMark />
-    <DevWrap  number={number} onADD={onADD} onUN={onUN}/>
-  </CounterContainer>
+    <DevWrap number={number} onADD={onADD} onUN={onUN}/>
+  </>
  );
 }
 

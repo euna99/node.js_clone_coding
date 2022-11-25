@@ -1,6 +1,6 @@
-import Dev_wrap from './Dev_wrap'
+import Dev_wrap from '../Dev_wrap'
 import {useDispatch,useSelector} from 'react-redux';
-import {add,un} from '../modules/counter';
+import {add,un} from '../../modules/counter';
 
 function CounterContainer(){
     const number=useSelector(state=>state.counter);
