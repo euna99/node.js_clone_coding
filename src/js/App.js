@@ -6,8 +6,6 @@ import { BrowserRouter,Route,Routes } from "react-router-dom";
 import DevPage from "./Dev_page";
 import Page3 from "./Page3";
 
-
-
 function App() {
 
 return (
