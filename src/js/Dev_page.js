@@ -7,14 +7,15 @@ import { useDispatch, useSelector } from "react-redux";
 import {add,un} from "../modules/counter";
 
 function Dev_Page() {
+  //여기가 리덕스 쓰는 페이지 넣는 부분 
   const number=useSelector(state=>state.counter);
   const dispatch=useDispatch();
   const onADD=()=>{
-    dispatch(add());
+    dispatch(add([]));
     alert("북마크");
   };
   const onUN=()=>{
-    dispatch(un());
+    dispatch(un([]));
   };
 
 const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
@@ -24,6 +25,8 @@ function handleScroll() {
     setScrollY(window.pageYOffset);
     setDevStatus(true);
   } else {
+
+
     setScrollY(window.pageYOffset);
     setDevStatus(false);
   }
@@ -38,6 +41,8 @@ useEffect(() => {
     window.removeEventListener("scroll", handleScroll);
   }; //  window 에서 스크롤을 감시를 종료
 });
+
+console.log(number)
 
  return (
   <>

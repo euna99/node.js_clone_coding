@@ -1,11 +1,9 @@
 import '../css/reset.css';
 import '../css/page2.css';
 import DevDummy from '../json/Dev_wrap.json'
-import {Link, useSearchParams} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {CiBookmark} from 'react-icons/ci';
-import Counter from '../modules/counter';
-
-function DevWrap(onADD){
+function DevWrap({onADD}){
     return(
         <div className="dev_wrap">
         <ul>
@@ -24,7 +22,6 @@ function DevWrap(onADD){
             채용보상금 1,000,000원
             </div>
           </li>
-        <Counter>
         {DevDummy.dev.map((dev) => (
           <li key={dev.id}>
               <div className="dev_wrap_top">
@@ -42,7 +39,6 @@ function DevWrap(onADD){
               </div>       
           </li>
               ))};
-        </Counter>
         </ul>
     </div>
     );

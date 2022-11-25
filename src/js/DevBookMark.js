@@ -6,7 +6,8 @@ function DevBookMark (){
     return(
       <div>
       <div className="bookmark">
-        <div className="bookmark_tit">
+        <div
+        className="bookmark_tit" >
           <BsFillBookmarkFill/>
           <p>북마크 모아보기</p>
         </div>
